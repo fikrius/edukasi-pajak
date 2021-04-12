@@ -22,7 +22,8 @@ Route::get('/', function () {
 
 Route::get('/{page}', PageController::class)
 ->name('page')
-->where('page', 'beranda|kontak');
+->where('page', 'beranda');
+// ->where('page', 'beranda|kontak');
 
 Auth::routes(['register' => false, 'login' => false]);
 
