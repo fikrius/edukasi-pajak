@@ -10,7 +10,7 @@
     {{-- Metatitle : For SEO --}}
     <title>{{ $metaTitle ?? config('app.name', 'laravel') }}</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/img/favicon.ico') }}">
+    {{-- <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/img/favicon.ico') }}"> --}}
 
     <!-- CSS here -->
     <link rel="stylesheet" href="{{ asset('/css/owl.carousel.min.css') }} ">
