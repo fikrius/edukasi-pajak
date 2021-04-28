@@ -248,7 +248,7 @@
                             <ul class="unordered-list text-justify">
                                 <li>
                                     Pilih jenis wajib pajaknya. Jika wajib pajak perorangan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ asset('/img/kalkulator_perorangan.png') }}" alt="">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ asset('/img/gallery/kalkulator_perorangan.png') }}" alt="">
                                 </li>
                                 <li>
                                     Masukkan tahun pembuatan NPWP
@@ -273,7 +273,7 @@
                                 </li>
                                 <li>
                                     Apabila wajib pajak berupa badan ataupun perusahaan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ asset('/img/kalkulator_badan.png') }}" alt="">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ asset('/img/gallery/kalkulator_badan.png') }}" alt="">
                                 </li>
                                 <li>Pilih jenis badan usaha</li>
                                 <li>Masukkan tahun pembuatan NPWP</li>
