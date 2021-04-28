@@ -216,7 +216,7 @@
                     <!-- about-img -->
                     <div class="about-img ">
                         <div class="about-font-img">
-                            <img class="rounded" src="{{ asset('/img/gallery/alokasi pajak kemana.png') }}" alt="">
+                            <img class="rounded" src="{{ url('/img/gallery/alokasi pajak kemana.png') }}" alt="">
                         </div> 
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                             <ul class="unordered-list text-justify">
                                 <li>
                                     Pilih jenis wajib pajaknya. Jika wajib pajak perorangan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ asset('/img/gallery/kalkulator_perorangan.png') }}" alt="">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/kalkulator_perorangan.png') }}" alt="">
                                 </li>
                                 <li>
                                     Masukkan tahun pembuatan NPWP
