@@ -283,6 +283,10 @@
     <script src="{{ asset('/js/plugins.js') }}"></script>
     <script src="{{ asset('/js/main.js') }}"></script>
 
+    <!-- MaskMoney Jquery Plugin -->
+    <script src="{{ asset('/jquery-maskmoney/src/jquery.maskMoney.js') }}"></script>
+
+
     {{-- Kalkulator Pajak --}}
     {{-- <script src="{{ asset('/js/kalkulator-pajak.js') }}"></script> --}}
 
