@@ -225,6 +225,71 @@
     </div>
     <!-- About Area End -->
 
+    <!--? Tata cara Penggunaan kalkulator -->
+    <div class="categories-area section-padding30" id="cara-menggunakan-kalkulator-pajak">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-80">
+                        {{-- <span>Our Services</span> --}}
+                        <h2>Bagaimana Cara Menggunakan Kalkulator Pajak?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            {{-- <span class="color: #ff5f13"><h1>1</h1></span> --}}
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Pajak Perorangan</h5>
+                            <ul class="unordered-list text-justify">
+                                <li>
+                                    Pilih jenis wajib pajaknya. Jika wajib pajak perorangan maka akan muncul tampilan seperti dibawah ini :
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ asset('/img/1. Kalkulator Pajak Perorangan.png') }}" alt="">
+                                </li>
+                                <li>
+                                    Masukkan tahun pembuatan NPWP
+                                </li>
+                                <li>Masukkan dasar pengenaan pajak</li>
+                                <li>Kemudian tekan tombol hitung pajak</li>
+                                <li>Maka pajak yg harus di setorkan akan muncul setelah dikalkulasi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            {{-- <span class="color: #ff5f13"><h1>2</h1></span> --}}
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Pajak Badan/Perusahaan</h5>
+                            <ul class="unordered-list text-justify">
+                                <li>
+                                    Pilih jenis wajib pajaknya
+                                </li>
+                                <li>
+                                    Apabila wajib pajak berupa badan ataupun perusahaan maka akan muncul tampilan seperti dibawah ini :
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ asset('/img/2. Kalkulator Pajak Badan.png') }}" alt="">
+                                </li>
+                                <li>Pilih jenis badan usaha</li>
+                                <li>Masukkan tahun pembuatan NPWP</li>
+                                <li>Masukkan peredaran bruto</li>
+                                <li>Masukkan total biaya</li>
+                                <li>Tekan tombol hitung pajak</li>
+                                <li>Maka akan keluar PKP dan pajak yang harus di setorkan setelah di kalkulasi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tata cara Penggunaan kalkulator End -->
+
     <!--? contact-form start -->
     <section id="kalkulator-pajak" class="contact-form-area section-bg  pt-115 pb-120 fix" data-background="{{ asset('/img/gallery/kalkulator.jpg') }}">
         <div class="container">

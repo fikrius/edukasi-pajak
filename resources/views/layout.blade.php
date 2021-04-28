@@ -98,6 +98,7 @@
                                                             <li><a href="{{ url('/'.'#cara-membuat-npwp') }}">Cara Membuat NPWP</a></li>
                                                         </ul>
                                                     </li>
+                                                    <li><a href="{{ url('/'.'#cara-menggunakan-kalkulator-pajak') }}">Cara Menggunakan Kalkulator Pajak</a></li>
                                                     {{-- <li><a href="{{ route('page', 'artikel') }}">Artikel</a>
                                                         <ul class="submenu">
                                                             <li><a href="blog.html">Artikel</a></li>
