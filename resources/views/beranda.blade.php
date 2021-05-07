@@ -381,28 +381,28 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="dasar_pengenaan_pajak" type="number" placeholder="Dasar Pengenaan Pajak" style="display: none">
+                                        <input id="dasar_pengenaan_pajak" type="text" placeholder="Dasar Pengenaan Pajak" style="display: none">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="peredaran_bruto" type="number" placeholder="Peredaran Bruto" style="display: none">
+                                        <input id="peredaran_bruto" type="text" placeholder="Peredaran Bruto" style="display: none">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="total_biaya" type="number" placeholder="Total Biaya" style="display: none">
+                                        <input id="total_biaya" type="text" placeholder="Total Biaya" style="display: none">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="pkp" type="number" placeholder="PKP" style="display: none; background-color: yellow" disabled>
+                                        <input id="pkp" type="text" placeholder="PKP" style="display: none; background-color: yellow" disabled>
                                     </div>
                                 </div>
                                 {{-- Hasil/berapa pajak yang harus disetorkan --}}
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="pajak_yang_disetorkan" type="number" placeholder="Pajak Yang Disetorkan" style="display: none; background-color: yellow" disabled>
+                                        <input id="pajak_yang_disetorkan" type="text" placeholder="Pajak Yang Disetorkan" style="display: none; background-color: yellow" disabled>
                                     </div>
                                 </div>
                                 
@@ -680,7 +680,7 @@
 
                     show_field_pajak_pribadi();
 
-                    var placeholderTarifPajak = "Tarif Pajak  (" + tarif_pajak_orang_pribadi + ")";
+                    var placeholderTarifPajak = "Tarif Pajak : 0,5% ";
                     // set value tarif pajak pribadi = 0,5 %
                     field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                     
@@ -712,11 +712,19 @@
                     if(validateYear() == false){
                         return;
                     }
-                    var pajak_yang_harus_disetorkan_pribadi = tarif_pajak_orang_pribadi * field_dasar_pengenaan_pajak.maskMoney('unmasked')[0];
+                    var pajak_yang_harus_disetorkan_pribadi = tarif_pajak_orang_pribadi * parseInt(field_dasar_pengenaan_pajak.maskMoney('unmasked')[0]*1000);
 
-                    field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_pribadi).maskMoney('mask');
+                    // Dikalikan 1000, karena terdapat bug di maskmoney
+                    // Jika option precision nya = 0, valuenya jadi dibagi 1000, buat ngakalinnya tak kali 1000 lagi
+                    // Ex : Rp. 5000 => hasilnya jika precision 0 jadi Rp. 5
+                    field_pajak_yang_disetorkan.val(parseInt(pajak_yang_harus_disetorkan_pribadi)).maskMoney('mask');
                 }else{
                     console.log('pajak badan');
+
+                    // Cek Jenis Bdan Usaha Dipilih Atau Belum
+                    if(validateBadanUsaha() == false){
+                        return;
+                    }
 
                     // Cek format inputan tahun benar atau tidak
                     // Yang benar panjangnya 4 karakter, ex : 2021, 202121 => salah
@@ -972,15 +980,15 @@
                 field_dasar_pengenaan_pajak.show().maskMoney({
                     'allowNegative': false,
                     'allowZero': true,
-                    'precision': 2,
+                    'precision': 0,
                     'thousands': '.',
                     'decimal': ',',
                     'prefix': 'Rp ' 
                 });
                 field_pajak_yang_disetorkan.show().maskMoney({
-                    'allowNegative': false,
-                    'allowZero': true,
-                    'precision': 2,
+                    // 'allowNegative': false,
+                    // 'allowZero': true,
+                    'precision': 0,
                     'thousands': '.',
                     'decimal': ',',
                     'prefix': 'Rp ' 
@@ -995,7 +1003,7 @@
                 field_peredaran_bruto.show().maskMoney({
                     'allowNegative': false,
                     'allowZero': true,
-                    'precision': 2,
+                    'precision': 0,
                     'thousands': '.',
                     'decimal': ',',
                     'prefix': 'Rp ' 
@@ -1003,7 +1011,7 @@
                 field_total_biaya.show().maskMoney({
                     'allowNegative': false,
                     'allowZero': true,
-                    'precision': 2,
+                    'precision': 0,
                     'thousands': '.',
                     'decimal': ',',
                     'prefix': 'Rp ' 
@@ -1011,7 +1019,7 @@
                 field_pkp.show().maskMoney({
                     'allowNegative': false,
                     'allowZero': true,
-                    'precision': 2,
+                    'precision': 0,
                     'thousands': '.',
                     'decimal': ',',
                     'prefix': 'Rp ' 
@@ -1019,7 +1027,7 @@
                 field_pajak_yang_disetorkan.show().maskMoney({
                     'allowNegative': false,
                     'allowZero': true,
-                    'precision': 2,
+                    'precision': 0,
                     'thousands': '.',
                     'decimal': ',',
                     'prefix': 'Rp ' 
