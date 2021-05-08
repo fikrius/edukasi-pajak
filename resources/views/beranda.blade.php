@@ -713,11 +713,8 @@
                         return;
                     }
                     var pajak_yang_harus_disetorkan_pribadi = tarif_pajak_orang_pribadi * parseInt(field_dasar_pengenaan_pajak.maskMoney('unmasked')[0]*1000);
-
-                    // Dikalikan 1000, karena terdapat bug di maskmoney
-                    // Jika option precision nya = 0, valuenya jadi dibagi 1000, buat ngakalinnya tak kali 1000 lagi
-                    // Ex : Rp. 5000 => hasilnya jika precision 0 jadi Rp. 5
-                    field_pajak_yang_disetorkan.val(parseInt(pajak_yang_harus_disetorkan_pribadi)).maskMoney('mask');
+                    // Dibulatkan ke angka yang terdekat
+                    field_pajak_yang_disetorkan.val(Math.round(pajak_yang_harus_disetorkan_pribadi)).maskMoney('mask');
                 }else{
                     console.log('pajak badan');
 
@@ -986,9 +983,9 @@
                     'prefix': 'Rp ' 
                 });
                 field_pajak_yang_disetorkan.show().maskMoney({
-                    // 'allowNegative': false,
-                    // 'allowZero': true,
-                    'precision': 0,
+                    'allowNegative': false,
+                    'allowZero': true,
+                    'precision': 2,
                     'thousands': '.',
                     'decimal': ',',
                     'prefix': 'Rp ' 
