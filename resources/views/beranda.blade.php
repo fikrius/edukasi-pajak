@@ -360,7 +360,7 @@
                                 <div class="col-lg-12 col-md-6">
                                     <div class="input-form" id="form_input_jenis_badan_usaha" style="display: none">
                                         <select name="jenis_badan_usaha" id="jenis_badan_usaha">
-                                            <option value="">-- Pilih Jenis Badan Usaha --</option>
+                                            <option value="-" selected>-- Pilih Jenis Badan Usaha --</option>
                                             <option value="pt">PT</option>
                                             <option value="cv">CV</option>
                                             <option value="firma">Firma</option>
@@ -720,7 +720,7 @@
 
                     // Cek Jenis Bdan Usaha Dipilih Atau Belum
                     if(validateBadanUsaha() == false){
-                        return;
+                       return;
                     }
 
                     // Cek format inputan tahun benar atau tidak
@@ -744,7 +744,8 @@
                             var tarif_pajak_badan = 0.005;
 
                             // Tampilkan tarif pajak di field_tarif_pajak
-                            field_tarif_pajak.val(tarif_pajak_badan);
+                            // field_tarif_pajak.val(tarif_pajak_badan);
+                            field_tarif_pajak.attr('placeholder', "Tarif Pajak : 0,5 %");
 
                             // Cek PKP
                             if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
@@ -752,7 +753,11 @@
                             }
 
                             // Hitung PKP
-                            var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
+                            var pkp = ( parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]*1000) - parseInt(field_total_biaya.maskMoney('unmasked')[0]*1000) );
+
+                            // alert(pkp);
+                            // console.log(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]));
+                            // console.log(parseInt(field_total_biaya.maskMoney('unmasked')[0]));
 
                             // Tampilkan PKP di field_pkp
                             field_pkp.val(pkp).maskMoney('mask');
@@ -762,22 +767,21 @@
                             var pajak = pkp * tarif_pajak_badan;
 
                             // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                            field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
+                            field_pajak_yang_disetorkan.val(Math.round(pajak)).maskMoney('mask');
 
                         }
                         // Jika tahun > 3 tahun
                         else{
                             // Cek peredaran bruto
                             // Jika Peredaran bruto >= 4,8 milyar (4.800.000.000)
-                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) >= 4800000000){
-                                // console.log(typeof(parseInt(field_peredaran_bruto.val())));
+                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]*1000) >= 4800000000){
                                 // console.log('lebih dari 3 th, bruto >= 4,8 milyar, tarif pajak 22%');
 
                                 // set tarif pajak = 22%
                                 var tarif_pajak_badan = 0.22;
 
                                 // Tampilkan tarif pajak di field_tarif_pajak
-                                field_tarif_pajak.val(tarif_pajak_badan);
+                                field_tarif_pajak.attr('placeholder', "Tarif Pajak : 22 %");
 
                                 // Cek PKP
                                 if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
@@ -785,8 +789,8 @@
                                 }
 
                                 // Hitung PKP
-                                var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
+                                var pkp = ( parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]*1000) - parseInt(field_total_biaya.maskMoney('unmasked')[0]*1000) );
+                                // alert(pkp);
                                 // Tampilkan PKP di field_pkp
                                 field_pkp.val(pkp).maskMoney('mask');
 
@@ -795,18 +799,19 @@
                                 var pajak = pkp * tarif_pajak_badan;
 
                                 // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                                field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
+                                field_pajak_yang_disetorkan.val(Math.round(pajak)).maskMoney('mask');
 
                             }
                             // Jika peredaran bruto < 4,8 milyar (4.800.000.000)
                             else{
+                                // alert(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]));
                                 // console.log('lebih dari 3 th, bruto < 4,8 milyar, tarif pajak 11%');
 
                                 // Set tarif pajak = 11%
                                 var tarif_pajak_badan = 0.11;
 
                                 // Tampilkan tarif pajak di field_tarif_pajak
-                                field_tarif_pajak.val(tarif_pajak_badan);
+                                field_tarif_pajak.attr('placeholder', "Tarif Pajak : 11 %");
 
                                 // Cek PKP
                                 if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
@@ -814,7 +819,7 @@
                                 }
 
                                 // Hitung PKP
-                                var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
+                                var pkp = ( parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]*1000) - parseInt(field_total_biaya.maskMoney('unmasked')[0]*1000) );
 
                                 // Tampilkan PKP di field_pkp
                                 field_pkp.val(pkp).maskMoney('mask');
@@ -824,7 +829,7 @@
                                 var pajak = pkp * tarif_pajak_badan;
 
                                 // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                                field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
+                                field_pajak_yang_disetorkan.val(Math.round(pajak)).maskMoney('mask');
 
                             }
                         }
@@ -842,7 +847,7 @@
                             var tarif_pajak_badan = 0.005;
 
                             // Tampilkan tarif pajak di field_tarif_pajak
-                            field_tarif_pajak.val(tarif_pajak_badan);
+                            field_tarif_pajak.attr('placeholder', "Tarif Pajak : 0,5 %");
 
                             // Cek PKP
                             if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
@@ -850,7 +855,7 @@
                             }
 
                             // Hitung PKP
-                            var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
+                            var pkp = ( parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]*1000) - parseInt(field_total_biaya.maskMoney('unmasked')[0]*1000) );
 
                             // Tampilkan PKP di field_pkp
                             field_pkp.val(pkp).maskMoney('mask');
@@ -860,21 +865,21 @@
                             var pajak = pkp * tarif_pajak_badan;
 
                             // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                            field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
+                            field_pajak_yang_disetorkan.val(Math.round(pajak)).maskMoney('mask');
 
                         }
                         // Jika tahun > 4 tahun
                         else{
                             // Cek peredaran bruto
                             // Jika Peredaran bruto >= 4,8 milyar (4.800.000.000)
-                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) >= 4800000000){
+                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]*1000) >= 4800000000){
                                 // console.log('jenis pajak lainnya, > 4 th, bruto >= 4,8 milyar, tarif pajak 22%');
 
                                 // set tarif pajak = 22%
                                 var tarif_pajak_badan = 0.22;
 
                                 // Tampilkan tarif pajak di field_tarif_pajak
-                                field_tarif_pajak.val(tarif_pajak_badan);
+                                field_tarif_pajak.attr('placeholder', "Tarif Pajak : 22 %");
 
                                 // Cek PKP
                                 if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
@@ -882,7 +887,7 @@
                                 }
 
                                 // Hitung PKP
-                                var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
+                                var pkp = ( parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]*1000) - parseInt(field_total_biaya.maskMoney('unmasked')[0]*1000) );
 
                                 // Tampilkan PKP di field_pkp
                                 field_pkp.val(pkp).maskMoney('mask');
@@ -892,7 +897,7 @@
                                 var pajak = pkp * tarif_pajak_badan;
 
                                 // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                                field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
+                                field_pajak_yang_disetorkan.val(Math.round(pajak)).maskMoney('mask');
 
                             }
                             // Jika peredaran bruto < 4,8 milyar (4.800.000.000)
@@ -903,7 +908,7 @@
                                 var tarif_pajak_badan = 0.11;
 
                                 // Tampilkan tarif pajak di field_tarif_pajak
-                                field_tarif_pajak.val(tarif_pajak_badan);   
+                                field_tarif_pajak.attr('placeholder', "Tarif Pajak : 11 %"); 
 
                                 // Cek PKP
                                 if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
@@ -911,7 +916,7 @@
                                 }
 
                                 // Hitung PKP
-                                var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
+                                var pkp = ( parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]*1000) - parseInt(field_total_biaya.maskMoney('unmasked')[0]*1000) );
 
                                 // Tampilkan PKP di field_pkp
                                 field_pkp.val(pkp).maskMoney('mask');
@@ -921,7 +926,7 @@
                                 var pajak = pkp * tarif_pajak_badan;
 
                                 // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                                field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
+                                field_pajak_yang_disetorkan.val(Math.round(pajak)).maskMoney('mask');
 
                             }
                         }
@@ -1060,6 +1065,13 @@
                         alert("Tahun Tidak Boleh Lebih Dari " + getCurrentYear() );
                         return false;
                     }
+                }
+            }
+
+            function validateBadanUsaha(){
+                if(field_jenis_badan_usaha.val() == "-"){
+                    alert("Jenis Badan Usaha Harus Dipilih Terlebih Dahulu!");
+                    return false;
                 }
             }
 
