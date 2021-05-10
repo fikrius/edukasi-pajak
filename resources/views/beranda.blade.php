@@ -288,36 +288,36 @@
                             <ol class="ordered-list text-left">
                                 <li>
                                     Pilih jenis wajib pajaknya
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/1-badan.png') }}" alt="pilih jenis pajak">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/1-badan.PNG') }}" alt="pilih jenis pajak">
                                 </li>
                                 <li>
                                     Apabila wajib pajak berupa badan ataupun perusahaan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/2-badan.png') }}" alt="kalkulator badan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/2-badan.PNG') }}" alt="kalkulator badan">
                                 </li>
                                 <li>
                                     Pilih jenis badan usaha
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/3-badan.png') }}" alt="pilih jenis badan usaha">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/3-badan.PNG') }}" alt="pilih jenis badan usaha">
                                 </li>
                                 <li>
                                     Masukkan tahun pembuatan NPWP
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/4-badan.png') }}" alt="tahun npwp">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/4-badan.PNG') }}" alt="tahun npwp">
                                 </li>
                                 <li>
                                     Masukkan peredaran bruto
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/5-badan.png') }}" alt="peredarann bruto">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/5-badan.PNG') }}" alt="peredarann bruto">
                                 </li>
                                 <li>
                                     Masukkan total biaya
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/6-badan.png') }}" alt="total biaya">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/6-badan.PNG') }}" alt="total biaya">
                                 </li>
                                 <li>
                                     Tekan tombol hitung pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/10-badan.png') }}" alt="hitung pajak badan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/10-badan.PNG') }}" alt="hitung pajak badan">
                                 </li>
                                 <li>
                                     Maka akan keluar PKP dan pajak yang harus di setorkan setelah di kalkulasi
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/8-badan.png') }}" alt="pkp">
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/9-badan.png') }}" alt="pajak yg disetorkan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/8-badan.PNG') }}" alt="pkp">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/9-badan.PNG') }}" alt="pajak yg disetorkan">
                                 </li>
                             </ol>
                         </div>
