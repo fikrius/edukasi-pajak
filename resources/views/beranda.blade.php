@@ -216,7 +216,7 @@
                     <!-- about-img -->
                     <div class="about-img ">
                         <div class="about-font-img">
-                            <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/1-perorangan.png') }}" alt="pilih jenis pajak">
+                            <img class="rounded" src="{{ url('/img/gallery/1-perorangan.png') }}">
                             <img class="rounded" src="{{ url('/img/gallery/alokasi pajak kemana.png') }}" alt="">
                         </div> 
                     </div>
