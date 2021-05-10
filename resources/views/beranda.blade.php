@@ -250,31 +250,31 @@
                             <ol class="ordered-list text-left">
                                 <li>
                                     Pilih jenis wajib pajaknya
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/1-perorangan.png') }}" alt="pilih jenis pajak">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/1-perorangan.PNG') }}" alt="pilih jenis pajak">
                                 </li>
                                 <li>
                                     Jika wajib pajak perorangan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/2-perorangan.png') }}" alt="tampilan pajak perorangan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/2-perorangan.PNG') }}" alt="tampilan pajak perorangan">
                                 </li>
                                 <li>
                                     Masukkan tahun pembuatan NPWP
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/3-perorangan.png') }}" alt="tahun pembuatan NPWP">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/3-perorangan.PNG') }}" alt="tahun pembuatan NPWP">
                                 </li>
                                 <li>
                                     Masukkan dasar pengenaan pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/4-perorangan.png') }}" alt="dasar pengenaan pajak">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/4-perorangan.PNG') }}" alt="dasar pengenaan pajak">
                                 </li>
                                 <li>
                                     Tarif pajak sebesar 0,5% untuk pajak perorangan
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/5-perorangan.png') }}" alt="tarif pajak perorangan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/5-perorangan.PNG') }}" alt="tarif pajak perorangan">
                                 </li>
                                 <li>
                                     Kemudian tekan tombol hitung pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/7-perorangan.png') }}" alt="tombol hitung pajak">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/7-perorangan.PNG') }}" alt="tombol hitung pajak">
                                 </li>
                                 <li>
                                     Maka pajak yg harus di setorkan akan muncul setelah dikalkulasi
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/6-perorangan.png') }}" alt="pajak yang disetorkan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/6-perorangan.PNG') }}" alt="pajak yang disetorkan">
                                 </li>
                             </ol>
                         </div>
