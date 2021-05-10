@@ -216,7 +216,7 @@
                     <!-- about-img -->
                     <div class="about-img ">
                         <div class="about-font-img">
-                            <img class="rounded" src="{{ url('/img/gallery/blog02.png') }}">
+                            <img class="rounded" src="{{ url('/img/gallery/blog01badan.png') }}">
                             <img class="rounded" src="{{ url('/img/gallery/alokasi pajak kemana.png') }}" alt="">
                             <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/1-perorangan.png') }}" alt="pilih jenis pajak">
                         </div> 
@@ -286,7 +286,7 @@
                             {{-- <span class="color: #ff5f13"><h1>2</h1></span> --}}
                         </div>
                         <div class="cat-cap">
-                            <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/1badan.png') }}" alt="pilih jenis pajak">
+                            <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/blog01badan.png') }}" alt="pilih jenis pajak">
 
                             <h3>Pajak Badan/Perusahaan</h3>
                             <ol class="ordered-list text-left">
