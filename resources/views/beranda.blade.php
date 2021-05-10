@@ -286,7 +286,7 @@
                             {{-- <span class="color: #ff5f13"><h1>2</h1></span> --}}
                         </div>
                         <div class="cat-cap">
-                            <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/1-badan.png') }}" alt="pilih jenis pajak">
+                            <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="rounded" src="{{ url('/img/gallery/1badan.png') }}" alt="pilih jenis pajak">
 
                             <h3>Pajak Badan/Perusahaan</h3>
                             <ol class="ordered-list text-left">
