@@ -216,7 +216,7 @@
                     <!-- about-img -->
                     <div class="about-img ">
                         <div class="about-font-img">
-                            <img data-src="{{ url('/img/gallery/alokasi pajak kemana.png') }}" class="lazyload rounded" alt="">
+                            <img data-src="{{ url('/img/gallery/alokasi pajak kemana.webp') }}" class="lazyload rounded" alt="">
                         </div> 
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                             <ol class="ordered-list text-left">
                                 <li>
                                     Pilih jenis wajib pajaknya
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/1.png') }}" alt="pilih jenis pajak">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/1.webp') }}" alt="pilih jenis pajak">
                                 </li>
                                 <li>
                                     Jika wajib pajak perorangan maka akan muncul tampilan seperti dibawah ini :
@@ -288,7 +288,7 @@
                             <ol class="ordered-list text-left">
                                 <li>
                                     Pilih jenis wajib pajaknya
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/1.png') }}" alt="pilih jenis pajak">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/1.webp') }}" alt="pilih jenis pajak">
                                 </li>
                                 <li>
                                     Apabila wajib pajak berupa badan ataupun perusahaan maka akan muncul tampilan seperti dibawah ini :
