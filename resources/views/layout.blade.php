@@ -37,7 +37,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="{{ asset('/img/logo/loder.jpg') }}" alt="">
+                    <img data-src="{{ asset('/img/logo/loder.jpg') }}" class="lazyload" alt="">
                 </div>
             </div>
         </div>
@@ -251,6 +251,9 @@
 
     <!-- JS here -->
 
+    <!-- Lazy Sizes -->    
+    <script src="lazysizes.min.js" async></script>
+      
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <script src="{{ asset('/js/vendor/modernizr-3.5.0.min.js') }}"></script>

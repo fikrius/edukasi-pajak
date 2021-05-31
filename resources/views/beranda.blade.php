@@ -216,7 +216,7 @@
                     <!-- about-img -->
                     <div class="about-img ">
                         <div class="about-font-img">
-                            <img class="rounded" src="{{ url('/img/gallery/alokasi pajak kemana.png') }}" alt="">
+                            <img data-src="{{ url('/img/gallery/alokasi pajak kemana.png') }}" class="lazyload rounded" alt="">
                         </div> 
                     </div>
                 </div>
