@@ -254,7 +254,7 @@
     <!-- Lazy Sizes -->    
     <script src="{{ asset('/js/lazysizes.min.js') }}" async></script>
       
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> --}}
 
     <script src="{{ asset('/js/vendor/modernizr-3.5.0.min.js') }}"></script>
     <!-- Jquery, Popper, Bootstrap -->
@@ -277,18 +277,18 @@
     <script src="{{ asset('/js/jquery.sticky.js') }}"></script>
     
     <!-- contact js -->
-    <script src="{{ asset('/js/contact.js') }}"></script>
-    <script src="{{ asset('/js/jquery.form.js') }}"></script>
-    <script src="{{ asset('/js/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('/js/mail-script.js') }}"></script>
-    <script src="{{ asset('/js/jquery.ajaxchimp.min.js') }}"></script>
+    {{-- <script src="{{ asset('/js/contact.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/js/jquery.form.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/js/jquery.validate.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/js/mail-script.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/js/jquery.ajaxchimp.min.js') }}"></script> --}}
     
     <!-- Jquery Plugins, main Jquery -->	
-    <script src="{{ asset('/js/plugins.js') }}"></script>
+    {{-- <script src="{{ asset('/js/plugins.js') }}"></script> --}}
     <script src="{{ asset('/js/main.js') }}"></script>
 
     <!-- MaskMoney Jquery Plugin -->
-    <script src="{{ asset('/jquery-maskmoney/src/jquery.maskMoney.js') }}"></script>
+    <script defer src="{{ asset('/jquery-maskmoney/src/jquery.maskMoney.js') }}"></script>
 
 
     {{-- Kalkulator Pajak --}}
