@@ -252,11 +252,11 @@
                                 </li>
                                 <li>
                                     Jika wajib pajak perorangan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/2.webp') }}" alt="tampilan pajak perorangan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/2.PNG') }}" alt="tampilan pajak perorangan">
                                 </li>
                                 <li>
-                                    Masukkan tahun pembuatan NPWP
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/3.webp') }}" alt="tahun pembuatan NPWP">
+                                    Masukkan tahun Pajak
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/3.PNG') }}" alt="tahun pembuatan NPWP">
                                 </li>
                                 <li>
                                     Masukkan dasar pengenaan pajak
@@ -292,31 +292,30 @@
                                 </li>
                                 <li>
                                     Apabila wajib pajak berupa badan ataupun perusahaan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/2.webp') }}" alt="kalkulator badan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/2.PNG') }}" alt="kalkulator badan">
                                 </li>
                                 <li>
                                     Pilih jenis badan usaha
                                     <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/3.webp') }}" alt="pilih jenis badan usaha">
                                 </li>
                                 <li>
-                                    Masukkan tahun pembuatan NPWP
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/4.webp') }}" alt="tahun npwp">
+                                    Masukkan tahun Pajak
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/4.PNG') }}" alt="tahun pajak">
                                 </li>
                                 <li>
-                                    Masukkan peredaran bruto
+                                    Masukkan peredaran bruto (Apabila Muncul Kolom Peredaran Bruto)
                                     <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/5.webp') }}" alt="peredarann bruto">
                                 </li>
                                 <li>
-                                    Masukkan total biaya
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/6.webp') }}" alt="total biaya">
+                                    Masukkan PKP (Apabila Muncul Kolom Peredaran Bruto)
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/8.PNG') }}" alt="PKP">
                                 </li>
                                 <li>
                                     Tekan tombol hitung pajak
                                     <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/10.webp') }}" alt="hitung pajak badan">
                                 </li>
                                 <li>
-                                    Maka akan keluar PKP dan pajak yang harus di setorkan setelah di kalkulasi
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/8.webp') }}" alt="pkp">
+                                    Maka akan keluar pajak yang harus di setorkan setelah di kalkulasi
                                     <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/9.webp') }}" alt="pajak yg disetorkan">
                                 </li>
                             </ol>
