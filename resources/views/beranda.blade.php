@@ -465,9 +465,6 @@
                         // alert("pajak pribadi");
                         e.preventDefault();
 
-                        // if(validateYear() == false){
-                        //     return;
-                        // }
                         var pajak_yang_harus_disetorkan_pribadi = (tarif_pajak_orang_pribadi * field_dasar_pengenaan_pajak.maskMoney('unmasked')[0]);
 
                         field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_pribadi).maskMoney('mask');
@@ -503,7 +500,14 @@
     
                                 if(val_tahun_pajak.length == 4 && parse_tahun_pajak <= 2020){
                                     // alert("show peredaran bruto field");
-                                    field_peredaran_bruto.show();
+                                    field_peredaran_bruto.show().maskMoney({
+                                        'allowNegative': false,
+                                        'allowZero': true,
+                                        'precision': 2,
+                                        'thousands': '.',
+                                        'decimal': ',',
+                                        'prefix': 'Rp ' 
+                                    });
 
                                     // tarif pajak 0,5%
                                     tarif_pajak_badan = 0.005;
@@ -512,20 +516,26 @@
                                     //Jika klik hitung
                                     btn_hitung_pajak.on('click', function(e){
                                         e.preventDefault();
-                                        let val_peredaran_bruto = parseInt(field_peredaran_bruto.val());
-                                        let pajak_yang_disetorkan = val_peredaran_bruto*tarif_pajak_badan;
-
                                         let placeholderTarifPajak = "Tarif Pajak ("+ (tarif_pajak_badan * 100).toString() +" %)";
                                         
                                         // set value tarif pajak pribadi = 0,5 %
                                         field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
 
-                                        field_pajak_yang_disetorkan.val(pajak_yang_disetorkan);
+                                        var pajak_yang_harus_disetorkan_pribadi = (tarif_pajak_badan * field_peredaran_bruto.maskMoney('unmasked')[0]);
+
+                                        field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_pribadi).maskMoney('mask');
                                     });
                                     
                                 }else if(val_tahun_pajak.length == 4 && parse_tahun_pajak >= 2021){
                                     // alert("show pkp field");
-                                    field_pkp.show();
+                                    field_pkp.show().maskMoney({
+                                        'allowNegative': false,
+                                        'allowZero': true,
+                                        'precision': 2,
+                                        'thousands': '.',
+                                        'decimal': ',',
+                                        'prefix': 'Rp ' 
+                                    });
 
                                     //Jika klik hitung
                                     btn_hitung_pajak.on('click', function(e){
@@ -534,25 +544,22 @@
 
                                         // Jika tahun pajak = 2021
                                         if(parse_tahun_pajak == 2021){
-                                            if(val_pkp > 4800000000){
+                                            if(field_pkp.maskMoney('unmasked')[0] > 4800000000){
                                                 // tarif pajak 22%
                                                 tarif_pajak_badan = 0.22;
                                                 console.log(tarif_pajak_badan);
-                                            }
-
-                                            if(val_pkp <= 4800000000){
+                                            }else if(field_pkp.maskMoney('unmasked')[0] <= 4800000000){
                                                 // tarif pajak 11%
                                                 tarif_pajak_badan = 0.11;
                                                 console.log(tarif_pajak_badan);
                                             }                                        
+
                                         }else if(parse_tahun_pajak >= 2022){
-                                            if(val_pkp > 4800000000){
+                                            if(field_pkp.maskMoney('unmasked')[0] > 4800000000){
                                                 // tarif pajak 22%
                                                 tarif_pajak_badan = 0.20;
                                                 console.log(tarif_pajak_badan);
-                                            }
-
-                                            if(val_pkp <= 4800000000){
+                                            }else if(field_pkp.maskMoney('unmasked')[0] <= 4800000000){
                                                 // tarif pajak 11%
                                                 tarif_pajak_badan = 0.10;
                                                 console.log(tarif_pajak_badan);
@@ -564,8 +571,9 @@
                                         // set value tarif pajak pribadi = 0,5 %
                                         field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
 
-                                        let pajak_yang_disetorkan = val_pkp*tarif_pajak_badan;
-                                        field_pajak_yang_disetorkan.val(pajak_yang_disetorkan);
+                                        var pajak_yang_harus_disetorkan_pribadi = (tarif_pajak_badan * field_pkp.maskMoney('unmasked')[0]);
+
+                                        field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_pribadi).maskMoney('mask');
                                     });
 
                                 }   
@@ -585,7 +593,14 @@
                                 field_pkp.hide();
     
                                 if(val_tahun_pajak.length == 4 && parse_tahun_pajak <= 2021){
-                                    field_peredaran_bruto.show();
+                                    field_peredaran_bruto.show().maskMoney({
+                                        'allowNegative': false,
+                                        'allowZero': true,
+                                        'precision': 2,
+                                        'thousands': '.',
+                                        'decimal': ',',
+                                        'prefix': 'Rp ' 
+                                    });
                                     
                                     // tarif pajak 0,5%
                                     tarif_pajak_badan = 0.005;
@@ -595,44 +610,52 @@
                                     //Jika klik hitung
                                     btn_hitung_pajak.on('click', function(e){
                                         e.preventDefault();
-                                        let val_peredaran_bruto = parseInt(field_peredaran_bruto.val());
-                                        let pajak_yang_disetorkan = val_peredaran_bruto*tarif_pajak_badan;
 
                                         let placeholderTarifPajak = "Tarif Pajak ("+ (tarif_pajak_badan * 100).toString() +" %)";
                                         
                                         // set value tarif pajak pribadi = 0,5 %
                                         field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
 
-                                        field_pajak_yang_disetorkan.val(pajak_yang_disetorkan);
+                                        var pajak_yang_harus_disetorkan_pribadi = (tarif_pajak_badan * field_peredaran_bruto.maskMoney('unmasked')[0]);
+
+                                        field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_pribadi).maskMoney('mask');
                                     });
                                 }else if(val_tahun_pajak.length == 4 && parse_tahun_pajak >= 2022){
                                     // alert("show pkp field (selain pt)");
-                                    field_pkp.show();
+                                    field_pkp.show().maskMoney({
+                                        'allowNegative': false,
+                                        'allowZero': true,
+                                        'precision': 2,
+                                        'thousands': '.',
+                                        'decimal': ',',
+                                        'prefix': 'Rp ' 
+                                    });
 
                                     //Jika klik hitung
                                     btn_hitung_pajak.on('click', function(e){
                                         e.preventDefault();
                                         let val_pkp = parseInt(field_pkp.val());
                                         
-                                        if(val_pkp > 4800000000){
+                                        if(field_pkp.maskMoney('unmasked')[0] > 4800000000){
                                             // tarif pajak 22%
                                             tarif_pajak_badan = 0.20;
                                             console.log(tarif_pajak_badan);
                                         }
                                         
-                                        if(val_pkp <= 4800000000){
+                                        if(field_pkp.maskMoney('unmasked')[0] <= 4800000000){
                                             // tarif pajak 11%
                                             tarif_pajak_badan = 0.10;
                                             console.log(tarif_pajak_badan);
                                         }   
                                         
-                                        let pajak_yang_disetorkan = val_pkp*tarif_pajak_badan;
                                         let placeholderTarifPajak = "Tarif Pajak ("+ (tarif_pajak_badan * 100).toString() +" %)";
                                         
                                         // set value tarif pajak pribadi = 0,5 %
                                         field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
 
-                                        field_pajak_yang_disetorkan.val(pajak_yang_disetorkan);
+                                        var pajak_yang_harus_disetorkan_pribadi = (tarif_pajak_badan * field_pkp.maskMoney('unmasked')[0]);
+
+                                        field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_pribadi).maskMoney('mask');
                                     });
                                 }   
 
@@ -648,235 +671,6 @@
                     hide_all_field_pajak();
                 }
             });
-
-           
-
-            // Fungsi hitung pajak PRIBADI
-            // Jika User Menekan tombol hitung pajak
-            // btn_hitung_pajak.on('click', function(e){
-            //     e.preventDefault();
-            //     console.log('tombol hitung ditekan');
-            //     let val_jenis_pajak = $(field_jenis_pajak).val();
-                
-            //     if(val_jenis_pajak == 'pribadi'){
-            //         console.log('pajak pribadi');   
-            //         // Cek format inputan tahun benar atau tidak
-            //         // Yang benar panjangnya 4 karakter, ex : 2021, 202121 => salah
-            //         if(validateYear() == false){
-            //             return;
-            //         }
-            //         var pajak_yang_harus_disetorkan_pribadi = (tarif_pajak_orang_pribadi * field_dasar_pengenaan_pajak.maskMoney('unmasked')[0])*1000;
-
-            //         field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_pribadi).maskMoney('mask');
-            //     }else{
-            //         console.log('pajak badan');
-
-            //         // Cek format inputan tahun benar atau tidak
-            //         // Yang benar panjangnya 4 karakter, ex : 2021, 202121 => salah
-            //         if(validateYear() == false){
-            //             return;
-            //         }
-
-            //         // Cek Pajak Badan Apa?
-            //         // Ada 2 kelompok bada
-            //         // 1. PT
-            //         // 2. CV, Firma, Koperasi, Lainnya
-            //         if(field_jenis_badan_usaha.val() == "pt"){
-            //             // Cek tahun
-            //             // Jika tahun <= 3 tahun
-            //             var tahun_pajak = parseInt(field_tahun_pajak.val());
-
-            //             if( (getCurrentYear() - tahun_pajak) <= 3){
-            //                 console.log('<= 3 th, tarif pajak 0,5%');
-            //                 // Set tarif pajak = 0,5%
-            //                 var tarif_pajak_badan = 0.005;
-
-            //                 // Tampilkan tarif pajak di field_tarif_pajak
-            //                 field_tarif_pajak.val(tarif_pajak_badan);
-
-            //                 // Cek PKP
-            //                 if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-            //                     return;
-            //                 }
-
-            //                 // Hitung PKP
-            //                 var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
-            //                 // Tampilkan PKP di field_pkp
-            //                 field_pkp.val(pkp).maskMoney('mask');
-
-            //                 // Hitung pajak yang harus disetorkan
-            //                 // Pajak = pkp x tarif pajak
-            //                 var pajak = pkp * tarif_pajak_badan;
-
-            //                 // Tampilkan value pajak ke field_pajak_yang_disetorkan
-            //                 field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
-            //             }
-            //             // Jika tahun > 3 tahun
-            //             else{
-            //                 // Cek peredaran bruto
-            //                 // Jika Peredaran bruto >= 4,8 milyar (4.800.000.000)
-            //                 if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) >= 4800000000){
-            //                     // console.log(typeof(parseInt(field_peredaran_bruto.val())));
-            //                     // console.log('lebih dari 3 th, bruto >= 4,8 milyar, tarif pajak 22%');
-
-            //                     // set tarif pajak = 22%
-            //                     var tarif_pajak_badan = 0.22;
-
-            //                     // Tampilkan tarif pajak di field_tarif_pajak
-            //                     field_tarif_pajak.val(tarif_pajak_badan);
-
-            //                     // Cek PKP
-            //                     if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-            //                         return;
-            //                     }
-
-            //                     // Hitung PKP
-            //                     var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
-            //                     // Tampilkan PKP di field_pkp
-            //                     field_pkp.val(pkp).maskMoney('mask');
-
-            //                     // Hitung pajak yang harus disetorkan
-            //                     // Pajak =  pkp x tarif pajak
-            //                     var pajak = pkp * tarif_pajak_badan;
-
-            //                     // Tampilkan value pajak ke field_pajak_yang_disetorkan
-            //                     field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
-            //                 }
-            //                 // Jika peredaran bruto < 4,8 milyar (4.800.000.000)
-            //                 else{
-            //                     // console.log('lebih dari 3 th, bruto < 4,8 milyar, tarif pajak 11%');
-
-            //                     // Set tarif pajak = 11%
-            //                     var tarif_pajak_badan = 0.11;
-
-            //                     // Tampilkan tarif pajak di field_tarif_pajak
-            //                     field_tarif_pajak.val(tarif_pajak_badan);
-
-            //                     // Cek PKP
-            //                     if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-            //                         return;
-            //                     }
-
-            //                     // Hitung PKP
-            //                     var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
-            //                     // Tampilkan PKP di field_pkp
-            //                     field_pkp.val(pkp).maskMoney('mask');
-
-            //                     // Hitung pajak yang harus disetorkan
-            //                     // Pajak =  pkp x tarif pajak
-            //                     var pajak = pkp * tarif_pajak_badan;
-
-            //                     // Tampilkan value pajak ke field_pajak_yang_disetorkan
-            //                     field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
-            //                 }
-            //             }
-            //         }
-            //         // Jika jenis badan selain PT => brarti CV, Koperasi, Firma, dan Lainnya
-            //         else{
-            //             // Cek tahun
-            //             var tahun_pajak = parseInt(field_tahun_pajak.val());
-
-            //             // Jika tahun pembuatan <= 4 tahun
-            //             if( (getCurrentYear() - tahun_pajak) <= 4){
-            //                 // console.log('jenis pajak lainnya, <= 4 th, tarif pajak 0,5%');
-
-            //                 // Set tarif pajak = 0,5%
-            //                 var tarif_pajak_badan = 0.005;
-
-            //                 // Tampilkan tarif pajak di field_tarif_pajak
-            //                 field_tarif_pajak.val(tarif_pajak_badan);
-
-            //                 // Cek PKP
-            //                 if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-            //                     return;
-            //                 }
-
-            //                 // Hitung PKP
-            //                 var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
-            //                 // Tampilkan PKP di field_pkp
-            //                 field_pkp.val(pkp).maskMoney('mask');
-
-            //                 // Hitung pajak yang harus disetorkan
-            //                 // Pajak = pkp x tarif pajak
-            //                 var pajak = pkp * tarif_pajak_badan;
-
-            //                 // Tampilkan value pajak ke field_pajak_yang_disetorkan
-            //                 field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
-            //             }
-            //             // Jika tahun > 4 tahun
-            //             else{
-            //                 // Cek peredaran bruto
-            //                 // Jika Peredaran bruto >= 4,8 milyar (4.800.000.000)
-            //                 if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) >= 4800000000){
-            //                     // console.log('jenis pajak lainnya, > 4 th, bruto >= 4,8 milyar, tarif pajak 22%');
-
-            //                     // set tarif pajak = 22%
-            //                     var tarif_pajak_badan = 0.22;
-
-            //                     // Tampilkan tarif pajak di field_tarif_pajak
-            //                     field_tarif_pajak.val(tarif_pajak_badan);
-
-            //                     // Cek PKP
-            //                     if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-            //                         return;
-            //                     }
-
-            //                     // Hitung PKP
-            //                     var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
-            //                     // Tampilkan PKP di field_pkp
-            //                     field_pkp.val(pkp).maskMoney('mask');
-
-            //                     // Hitung pajak yang harus disetorkan
-            //                     // Pajak =  pkp x tarif pajak
-            //                     var pajak = pkp * tarif_pajak_badan;
-
-            //                     // Tampilkan value pajak ke field_pajak_yang_disetorkan
-            //                     field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
-            //                 }
-            //                 // Jika peredaran bruto < 4,8 milyar (4.800.000.000)
-            //                 else{
-            //                     // console.log('jenis pajak lainnya, > 4 th, bruto < 4,8 milyar, tarif pajak 11%');
-
-            //                     // Set tarif pajak = 11%
-            //                     var tarif_pajak_badan = 0.11;
-
-            //                     // Tampilkan tarif pajak di field_tarif_pajak
-            //                     field_tarif_pajak.val(tarif_pajak_badan);   
-
-            //                     // Cek PKP
-            //                     if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-            //                         return;
-            //                     }
-
-            //                     // Hitung PKP
-            //                     var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
-            //                     // Tampilkan PKP di field_pkp
-            //                     field_pkp.val(pkp).maskMoney('mask');
-
-            //                     // Hitung pajak yang harus disetorkan
-            //                     // Pajak =  pkp x tarif pajak
-            //                     var pajak = pkp * tarif_pajak_badan;
-
-            //                     // Tampilkan value pajak ke field_pajak_yang_disetorkan
-            //                     field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
-            //                 }
-            //             }
-            //         }
-
-            //     }
-            // });
 
             // Pajak Badan/Selain PT.
             // Fungsi untuk mengecek apakah peredaran bruto lebih besar/kecil dari total biaya
