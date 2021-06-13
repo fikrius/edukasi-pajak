@@ -443,6 +443,10 @@
                 // let val_jenis_pajak = $(this).val("");
                 let val_jenis_pajak = $(this).val();
 
+                // Tarif pajak badan
+                // Set 0 terus ketika value nya milih pajak badan, biar aman
+                var tarif_pajak_badan = 0;
+
                 if(val_jenis_pajak === 'pribadi'){
                     // reset semua value dulu ketika berubah pilihan hitung pajak pribadi atau badan
                     reset();
@@ -473,16 +477,20 @@
                 }else if(val_jenis_pajak === 'badan'){
                     reset();
 
+                    // set value tarif pajak pribadi = 0,5 %
+                    field_tarif_pajak.attr("placeholder", "Tarif Pajak");
+
                     // Tarif pajak badan
                     // Set 0 terus ketika value nya milih pajak badan, biar aman
                     var tarif_pajak_badan = 0;
-
-                    // set value tarif pajak pribadi = 0,5 %
-                    field_tarif_pajak.attr("placeholder", "Tarif Pajak");
                     
                     show_field_pajak_badan();
                     
                     field_jenis_badan_usaha.on('change', function(){
+                        // Tarif pajak badan
+                        // Set 0 terus ketika value nya milih pajak badan, biar aman
+                        var tarif_pajak_badan = 0;
+
                         let val_jenis_badan_usaha = $(this).val();
                         // Cek jika PT
                         if(val_jenis_badan_usaha === "pt"){
