@@ -371,33 +371,33 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="tahun_pajak" type="number" placeholder="Tahun Pajak">
+                                        <input id="tahun_pajak" type="text" placeholder="Tahun Pajak">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="tarif_pajak" type="number"  placeholder="Tarif Pajak" style="display: none; background-color: yellow" disabled>
+                                        <input id="tarif_pajak" type="text"  placeholder="Tarif Pajak" style="display: none; background-color: yellow" disabled>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="peredaran_bruto" type="number" placeholder="Peredaran Bruto" style="display: none">
+                                        <input id="peredaran_bruto" type="text" placeholder="Peredaran Bruto" style="display: none">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="pkp" type="number" placeholder="PKP" style="display: none;">
+                                        <input id="pkp" type="text" placeholder="PKP" style="display: none;">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="dasar_pengenaan_pajak" type="number" placeholder="Dasar Pengenaan Pajak" style="display: none;">
+                                        <input id="dasar_pengenaan_pajak" type="text" placeholder="Dasar Pengenaan Pajak" style="display: none;">
                                     </div>
                                 </div>
                                 {{-- Hasil/berapa pajak yang harus disetorkan --}}
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="pajak_yang_disetorkan" type="number" placeholder="Pajak Yang Disetorkan" style="display: none; background-color: yellow" disabled>
+                                        <input id="pajak_yang_disetorkan" type="text" placeholder="Pajak Yang Disetorkan" style="display: none; background-color: yellow" disabled>
                                     </div>
                                 </div>
                                 
