@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "@ckeditor/ckeditor5-build-decoupled-document": "^26.0.0",
-        "@ckeditor/ckeditor5-ckfinder": "^26.0.0"
+        "@ckeditor/ckeditor5-ckfinder": "^26.0.0",
+        "@popperjs/core": "^2.9.2"
     }
 }
