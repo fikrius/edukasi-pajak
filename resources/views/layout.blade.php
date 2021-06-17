@@ -1,3 +1,10 @@
+<?php
+  
+  //or, if you DO want a file to cache, use:
+  header("Cache-Control: max-age=2592000, Public"); //30days (60sec * 60min * 24hours * 30days)
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
@@ -6,7 +13,7 @@
     <title>@yield('title') </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Cache-control" content="public">
+    {{-- <meta http-equiv="Cache-control" content="public"> --}}
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 
