@@ -248,31 +248,31 @@
                             <ol class="ordered-list text-left">
                                 <li>
                                     Pilih jenis wajib pajaknya
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/1.webp') }}" alt="pilih jenis pajak">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/1.webp') }}" alt="pilih jenis pajak">
                                 </li>
                                 <li>
                                     Jika wajib pajak perorangan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/2.PNG') }}" alt="tampilan pajak perorangan">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/2.PNG') }}" alt="tampilan pajak perorangan">
                                 </li>
                                 <li>
                                     Masukkan tahun Pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/3.PNG') }}" alt="tahun pembuatan NPWP">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/3.PNG') }}" alt="tahun pembuatan NPWP">
                                 </li>
                                 <li>
                                     Masukkan dasar pengenaan pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/4.webp') }}" alt="dasar pengenaan pajak">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/4.webp') }}" alt="dasar pengenaan pajak">
                                 </li>
                                 <li>
                                     Tarif pajak sebesar 0,5% untuk pajak perorangan
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/5.webp') }}" alt="tarif pajak perorangan">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/5.webp') }}" alt="tarif pajak perorangan">
                                 </li>
                                 <li>
                                     Kemudian tekan tombol hitung pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/7.webp') }}" alt="tombol hitung pajak">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/7.webp') }}" alt="tombol hitung pajak">
                                 </li>
                                 <li>
                                     Maka pajak yg harus di setorkan akan muncul setelah dikalkulasi
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/6.webp') }}" alt="pajak yang disetorkan">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/6.webp') }}" alt="pajak yang disetorkan">
                                 </li>
                             </ol>
                         </div>
@@ -288,35 +288,35 @@
                             <ol class="ordered-list text-left">
                                 <li>
                                     Pilih jenis wajib pajaknya
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/1.webp') }}" alt="pilih jenis pajak">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/1.webp') }}" alt="pilih jenis pajak">
                                 </li>
                                 <li>
                                     Apabila wajib pajak berupa badan ataupun perusahaan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/2.PNG') }}" alt="kalkulator badan">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/2.PNG') }}" alt="kalkulator badan">
                                 </li>
                                 <li>
                                     Pilih jenis badan usaha
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/3.webp') }}" alt="pilih jenis badan usaha">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/3.webp') }}" alt="pilih jenis badan usaha">
                                 </li>
                                 <li>
                                     Masukkan tahun Pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/4.PNG') }}" alt="tahun pajak">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/4.PNG') }}" alt="tahun pajak">
                                 </li>
                                 <li>
                                     Masukkan peredaran bruto (Apabila Muncul Kolom Peredaran Bruto)
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/5.webp') }}" alt="peredarann bruto">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/5.webp') }}" alt="peredarann bruto">
                                 </li>
                                 <li>
                                     Masukkan PKP (Apabila Muncul Kolom Peredaran Bruto)
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/8.PNG') }}" alt="PKP">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/8.PNG') }}" alt="PKP">
                                 </li>
                                 <li>
                                     Tekan tombol hitung pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/10.webp') }}" alt="hitung pajak badan">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/10.webp') }}" alt="hitung pajak badan">
                                 </li>
                                 <li>
                                     Maka akan keluar pajak yang harus di setorkan setelah di kalkulasi
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/9.webp') }}" alt="pajak yg disetorkan">
+                                    <img style="max-width: 100%; height: auto; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/9.webp') }}" alt="pajak yg disetorkan">
                                 </li>
                             </ol>
                         </div>
