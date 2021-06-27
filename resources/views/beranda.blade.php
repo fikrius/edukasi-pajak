@@ -252,27 +252,27 @@
                                 </li>
                                 <li>
                                     Jika wajib pajak perorangan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/2.webp') }}" alt="tampilan pajak perorangan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/revisi/semua.PNG') }}" alt="tampilan pajak perorangan">
                                 </li>
                                 <li>
-                                    Masukkan tahun pembuatan NPWP
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/3.webp') }}" alt="tahun pembuatan NPWP">
+                                    Masukkan tahun pajak
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/revisi/tahun pajak.PNG') }}" alt="tahun pembuatan NPWP">
                                 </li>
                                 <li>
                                     Masukkan dasar pengenaan pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/4.webp') }}" alt="dasar pengenaan pajak">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/revisi/dasar pengenaan pajak.PNG') }}" alt="dasar pengenaan pajak">
                                 </li>
                                 <li>
-                                    Tarif pajak sebesar 0,5% untuk pajak perorangan
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/5.webp') }}" alt="tarif pajak perorangan">
+                                    Tarif pajak akan muncul setelah menekan tombol hitung pajak 
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/revisi/tarif pajak.PNG') }}" alt="tarif pajak perorangan">
                                 </li>
                                 <li>
                                     Kemudian tekan tombol hitung pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/7.webp') }}" alt="tombol hitung pajak">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/revisi/hitung pajak.PNG') }}" alt="tombol hitung pajak">
                                 </li>
                                 <li>
                                     Maka pajak yg harus di setorkan akan muncul setelah dikalkulasi
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/6.webp') }}" alt="pajak yang disetorkan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/perorangan/revisi/pajak yg disetorkan.PNG') }}" alt="pajak yang disetorkan">
                                 </li>
                             </ol>
                         </div>
@@ -292,32 +292,32 @@
                                 </li>
                                 <li>
                                     Apabila wajib pajak berupa badan ataupun perusahaan maka akan muncul tampilan seperti dibawah ini :
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/2.webp') }}" alt="kalkulator badan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/revisi/semua.PNG') }}" alt="kalkulator badan">
                                 </li>
                                 <li>
                                     Pilih jenis badan usaha
                                     <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/3.webp') }}" alt="pilih jenis badan usaha">
                                 </li>
                                 <li>
-                                    Masukkan tahun pembuatan NPWP
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/4.webp') }}" alt="tahun npwp">
+                                    Masukkan tahun pajak
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/revisi/tahun pajak.PNG') }}" alt="tahun npwp">
                                 </li>
                                 <li>
-                                    Masukkan peredaran bruto
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/5.webp') }}" alt="peredarann bruto">
+                                    Masukkan peredaran bruto 
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/revisi/bruto.PNG') }}" alt="peredarann bruto">
                                 </li>
                                 <li>
-                                    Masukkan total biaya
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/6.webp') }}" alt="total biaya">
+                                    Masukkan PKP (jika muncul kolom isian PKP)
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/revisi/pkp.PNG') }}" alt="total biaya">
                                 </li>
                                 <li>
                                     Tekan tombol hitung pajak
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/10.webp') }}" alt="hitung pajak badan">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/revisi/hitung pajak.PNG') }}" alt="hitung pajak badan">
                                 </li>
                                 <li>
-                                    Maka akan keluar PKP dan pajak yang harus di setorkan setelah di kalkulasi
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/8.webp') }}" alt="pkp">
-                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/9.webp') }}" alt="pajak yg disetorkan">
+                                    Maka akan keluar tarif dan pajak yang harus di setorkan setelah di kalkulasi
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/revisi/tarif pajak.PNG') }}" alt="pkp">
+                                    <img style="max-width: 100%; margin-top: 1rem; margin-bottom: 1rem;" class="lazyload rounded" data-src="{{ asset('/img/gallery/badan/revisi/pajak yg disetorkan.PNG') }}" alt="pajak yg disetorkan">
                                 </li>
                             </ol>
                         </div>
@@ -419,6 +419,60 @@
         </div>
     </section>
     <!-- contact-form end -->
+
+    <!--Team Ara Start -->
+    <div class="team-area section-padding30">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="cl-xl-7 col-lg-8 col-md-10">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-70">
+                        {{-- <span>Our Team Mambers</span> --}}
+                        <h2>Team Member</h2>
+                    </div> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-team mb-30 text-center">
+                        <div class="team-img">
+                            <img src="{{ asset('/img/team/dospem.jpg') }}" alt="">
+                            <div class="team-caption">
+                                <h3><a href="#">Endra Murti Sagoro, S.Pd., S.E., M.Sc.</a></h3>
+                                <p>Dosen Pembimbing</p>
+                                <p>NIP : 198504092010121005</p>
+                                <!-- Blog Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-team mb-30 text-center">
+                        <div class="team-img">
+                            <img src="{{ asset('/img/team/mahasiswa.jpg') }}" alt="">
+                            <div class="team-caption">
+                                <h3><a href="#">Sekar Permata Hati</a></h3>
+                                <p>Mahasiswa</p>
+                                <p>NIM : 18809134052</p>
+                                <!-- Blog Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Ara End -->
 @endsection
 
 @section('script')
