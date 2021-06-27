@@ -251,6 +251,9 @@
 
     <!-- JS here -->
 
+    {{-- Moment JS --}}
+    <script src="{{ asset('/js/moment-with-locales.js') }}"></script>
+
     <!-- Lazy Sizes -->    
     <script src="{{ asset('/js/lazysizes.min.js') }}" async></script>
       

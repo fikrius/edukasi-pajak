@@ -348,7 +348,7 @@
                         <!-- form -->
                         <form class="contact-form">
                             <div class="row ">
-                                <div class="col-lg-12 col-md-6">
+                                <div class="col-lg-12 col-md-12">
                                     <div class="input-form">
                                         <select name="jenis_pajak" id="jenis_pajak">
                                             <option value="">-- Pilih Jenis Pajak --</option>
@@ -357,7 +357,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-6">
+                                <div class="col-lg-12 col-md-12">
                                     <div class="input-form" id="form_input_jenis_badan_usaha" style="display: none">
                                         <select name="jenis_badan_usaha" id="jenis_badan_usaha">
                                             <option value="">-- Pilih Jenis Badan Usaha --</option>
@@ -371,38 +371,34 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="tahun_pembuatan_npwp" type="number" placeholder="Tahun Pembuatan NPWP" style="display: none">
+                                        <label for="tahun_pembuatan_npwp" id="label_tahun_pembuatan_npwp" style="display: none"><h5>Tahun Pajak</h5></label>
+                                        <input id="tahun_pembuatan_npwp" type="date" placeholder="Tahun Pajak" style="display: none">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="tarif_pajak" type="number" style="display: none; background-color: yellow" disabled>
+                                        <input id="tarif_pajak" type="number" style="display: none; background-color: #e3e6e4" disabled>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="dasar_pengenaan_pajak" type="number" placeholder="Dasar Pengenaan Pajak" style="display: none">
+                                        <input id="dasar_pengenaan_pajak" type="text" placeholder="Dasar Pengenaan Pajak" style="display: none">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="peredaran_bruto" type="number" placeholder="Peredaran Bruto" style="display: none">
+                                        <input id="peredaran_bruto" type="text" placeholder="Peredaran Bruto" style="display: none">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="total_biaya" type="number" placeholder="Total Biaya" style="display: none">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="input-form">
-                                        <input id="pkp" type="number" placeholder="PKP" style="display: none; background-color: yellow" disabled>
+                                        <input id="pkp" type="text" placeholder="PKP" style="display: none;">
                                     </div>
                                 </div>
                                 {{-- Hasil/berapa pajak yang harus disetorkan --}}
                                 <div class="col-lg-12">
                                     <div class="input-form">
-                                        <input id="pajak_yang_disetorkan" type="number" placeholder="Pajak Yang Disetorkan" style="display: none; background-color: yellow" disabled>
+                                        <input id="pajak_yang_disetorkan" type="text" placeholder="Pajak Yang Disetorkan" style="display: none; background-color: #e3e6e4" disabled>
                                     </div>
                                 </div>
                                 
@@ -423,248 +419,22 @@
         </div>
     </section>
     <!-- contact-form end -->
-    <!--Team Ara Start -->
-    {{-- <div class="team-area section-padding30">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="cl-xl-7 col-lg-8 col-md-10">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle text-center mb-70">
-                        <span>Our Team Mambers</span>
-                        <h2>What We Can Do For You</h2>
-                    </div> 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-team mb-30 text-center">
-                        <div class="team-img">
-                            <img src="{{ asset('/img/gallery/team1.png') }}" alt="">
-                            <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
-                                <!-- Blog Social -->
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-team mb-30 text-center">
-                        <div class="team-img">
-                            <img src="{{ asset('/img/gallery/team2.png') }}" alt="">
-                            <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
-                                <!-- Blog Social -->
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-team mb-30 text-center">
-                        <div class="team-img">
-                            <img src="{{ asset('/img/gallery/team3.png') }}" alt="">
-                            <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
-                                <!-- Blog Social -->
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- Team Ara End -->
-    <!--? Testimonial Start -->
-    {{-- <div class="testimonial-area testimonial-padding section-bg" data-background="{{ asset('/img/gallery/section_bg04.jpg') }}">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-xl-7 col-lg-7">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle section-tittle2 mb-25">
-                        <span>Clients Testimonials</span>
-                        <h2>What Our Clients Say!</h2>
-                    </div> 
-                    <div class="h1-testimonial-active mb-70">
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial ">
-                            <!-- Testimonial Content -->
-                            <div class="testimonial-caption ">
-                                <div class="testimonial-top-cap">
-                                    <p>Srem ipsum adolor dfsit amet, consectetur adipiscing elit, sed dox beiusmod tempor incci didunt ut labore et dolore magna aliqua. Quis cipsucm suspendisse ultrices gravida. Risus commodo vivercra maecenas accumsan lac.</p>
-                                </div>
-                                <!-- founder -->
-                                <div class="testimonial-founder d-flex align-items-center">
-                                    <div class="founder-img">
-                                        <img src="{{ asset('/img/gallery/Homepage_testi.png') }}" alt="">
-                                    </div>
-                                    <div class="founder-text">
-                                        <span>Jhaon smith</span>
-                                        <p>Creative designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial ">
-                            <!-- Testimonial Content -->
-                            <div class="testimonial-caption ">
-                                <div class="testimonial-top-cap">
-                                    <p>Srem ipsum adolor dfsit amet, consectetur adipiscing elit, sed dox beiusmod tempor incci didunt ut labore et dolore magna aliqua. Quis cipsucm suspendisse ultrices gravida. Risus commodo vivercra maecenas accumsan lac.</p>
-                                </div>
-                                <!-- founder -->
-                                <div class="testimonial-founder d-flex align-items-center">
-                                    <div class="founder-img">
-                                        <img src="{{ asset('/img/gallery/Homepage_testi.png') }}" alt="">
-                                    </div>
-                                    <div class="founder-text">
-                                        <span>Jhaon smith</span>
-                                        <p>Creative designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Form Start -->
-                <div class="col-xl-4 col-lg-5 col-md-8">
-                    <div class="testimonial-form text-center">
-                        <h3>Always listening, always understanding.</h3>
-                        <input type="text" placeholder="Incoterms">
-                        <button name="submit" class="submit-btn">Request a Quote</button>
-                    </div>
-                </div>
-                <!-- Form End -->
-            </div>
-        </div>
-    </div> --}}
-    <!-- Testimonial End -->
-    <!--? Blog Area Start -->
-    {{-- <div class="home-blog-area section-padding30">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-tittle text-center mb-70">
-                        <span>Our Recent news</span>
-                        <h2>Tourist Blog</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="{{ asset('/img/gallery/blog01.png') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="blog-caption">
-                            <div class="blog-date text-center">
-                                <span>27</span>
-                                <p>SEP</p>
-                            </div>
-                            <div class="blog-cap">
-                                <ul>
-                                    <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
-                                    <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
-                                </ul>
-                                <h3><a href="blog_details.html">Here’s what you should know before.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="{{ asset('/img/gallery/blog1.png') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="blog-caption">
-                            <div class="blog-date text-center">
-                                <span>27</span>
-                                <p>SEP</p>
-                            </div>
-                            <div class="blog-cap">
-                                <ul>
-                                    <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
-                                    <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
-                                </ul>
-                                <h3><a href="blog_details.html">Here’s what you should know before.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="{{ asset('/img/gallery/blog02.png') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="blog-caption">
-                            <div class="blog-date text-center">
-                                <span>27</span>
-                                <p>SEP</p>
-                            </div>
-                            <div class="blog-cap">
-                                <ul>
-                                    <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
-                                    <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
-                                </ul>
-                                <h3><a href="blog_details.html">Here’s what you should know before.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- Blog Area End -->
 @endsection
 
 @section('script')
     <script>
         $(document).ready(function(){
-            // Tarif pajak orang pribadi = 0,5 %
-            let tarif_pajak_orang_pribadi = 0.005;
 
             // Inisialisasi variabel field kalkulator
             let field_jenis_pajak = $('#jenis_pajak');
             let form_input_jenis_badan_usaha = $('#form_input_jenis_badan_usaha');
             let field_jenis_badan_usaha = $('#jenis_badan_usaha');
             let field_tahun_pembuatan_npwp = $('#tahun_pembuatan_npwp');
+            let label_tahun_pembuatan_npwp = $('#label_tahun_pembuatan_npwp');
             let field_tarif_pajak = $('#tarif_pajak');
             let field_dasar_pengenaan_pajak = $('#dasar_pengenaan_pajak');
             let field_pajak_yang_disetorkan = $('#pajak_yang_disetorkan');
             let field_peredaran_bruto = $('#peredaran_bruto');
-            let field_total_biaya = $('#total_biaya');
             let field_pkp = $('#pkp');
             let btn_hitung_pajak = $('#hitung-pajak');
             let btn_reset_pajak = $('#reset-pajak');
@@ -680,7 +450,7 @@
 
                     show_field_pajak_pribadi();
 
-                    var placeholderTarifPajak = "Tarif Pajak  (" + tarif_pajak_orang_pribadi + ")";
+                    var placeholderTarifPajak = "Tarif Pajak ";
                     // set value tarif pajak pribadi = 0,5 %
                     field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                     
@@ -706,222 +476,316 @@
                 let val_jenis_pajak = $(field_jenis_pajak).val();
                 
                 if(val_jenis_pajak == 'pribadi'){
-                    console.log('pajak pribadi');   
-                    // Cek format inputan tahun benar atau tidak
-                    // Yang benar panjangnya 4 karakter, ex : 2021, 202121 => salah
-                    if(validateYear() == false){
-                        return;
+                    console.log('pajak pribadi');
+
+                    // Format YYYY-mm-dd    
+                    let date = moment(field_tahun_pembuatan_npwp.val(), "YYYY-MM-DD");
+                    let startDate = moment("2018-06-30", "YYYY-MM-DD");
+                    let endDate = moment("2026-01-01", "YYYY-MM-DD");
+
+                    if(date <= moment("2018-06-30", "YYYY-MM-DD")){
+
+                        if(parseInt(field_dasar_pengenaan_pajak.maskMoney('unmasked')[0]) <= 4800000000){
+                            var tarif_pajak_orang_pribadi = 0.01;
+
+                            var placeholderTarifPajak = "Tarif Pajak 1 %)";
+                            field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                        }else{
+                            // jika selain itu tidak kena pajak
+                            var tarif_pajak_orang_pribadi = 1;
+                            var placeholderTarifPajak = "Tarif Pajak 0 %";
+                            field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                        }
+                    }else if(date.isBetween(startDate, endDate)){
+                        if(parseInt(field_dasar_pengenaan_pajak.maskMoney('unmasked')[0]) <= 4800000000){
+                            var tarif_pajak_orang_pribadi = 0.005;
+
+                            var placeholderTarifPajak = "Tarif Pajak 0,5 %)";
+                            field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                        }else{
+                            // jika selain itu tidak kena pajak
+                            var tarif_pajak_orang_pribadi = 1;
+                            var placeholderTarifPajak = "Tarif Pajak 0 %";
+                            field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                        }
+                    }else if(date > moment("2025-12-31", "YYYY-MM-DD")){
+                        // kalau lebih dari 2015 maka alert max tahunnya 2025
+                        alert("Tahun pajak tidak boleh lebih dari 2025");
+                        return false;
                     }
+
                     var pajak_yang_harus_disetorkan_pribadi = tarif_pajak_orang_pribadi * field_dasar_pengenaan_pajak.maskMoney('unmasked')[0];
 
                     field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_pribadi).maskMoney('mask');
                 }else{
                     console.log('pajak badan');
+                    
+                    // Cek tahun pajak 
+                    // <= juni 2018
+                    // > juni 2018 - 2020
+                    // 2021
+                    // >= 2022
+                    // Format YYYY-mm-dd    
+                    let date = moment(field_tahun_pembuatan_npwp.val(), "YYYY-MM-DD");
 
-                    // Cek format inputan tahun benar atau tidak
-                    // Yang benar panjangnya 4 karakter, ex : 2021, 202121 => salah
-                    if(validateYear() == false){
-                        return;
-                    }
+                    // Variable penanda PT atau selain PT
+                    // let isPT = 
 
-                    // Cek Pajak Badan Apa?
-                    // Ada 2 kelompok bada
-                    // 1. PT
-                    // 2. CV, Firma, Koperasi, Lainnya
-                    if(field_jenis_badan_usaha.val() == "pt"){
-                        // Cek tahun
-                        // Jika tahun <= 3 tahun
-                        var tahun_pembuatan_npwp = parseInt(field_tahun_pembuatan_npwp.val());
+                    // untuk kondisi kedua
+                    let startDate = moment("2018-06-30", "YYYY-MM-DD");
+                    let endDate = moment("2021-01-01", "YYYY-MM-DD");
 
-                        if( (getCurrentYear() - tahun_pembuatan_npwp) <= 3){
-                            console.log('<= 3 th, tarif pajak 0,5%');
-                            // Set tarif pajak = 0,5%
-                            var tarif_pajak_badan = 0.005;
+                    if(date <= moment("2018-06-30", "YYYY-MM-DD")){
 
-                            // Tampilkan tarif pajak di field_tarif_pajak
-                            field_tarif_pajak.val(tarif_pajak_badan);
+                        // Untuk seluruh badan usaha
+                        if(field_jenis_badan_usaha.val() == "pt" || field_jenis_badan_usaha.val() == "cv" || field_jenis_badan_usaha.val() == "firma" || field_jenis_badan_usaha.val() == "koperasi" || field_jenis_badan_usaha.val() == "lainnya"){
+                            // jika peredaaran bruto <= 4,8 M
+                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) <= 4800000000 ){
+                                var tarif_pajak_badan = 0.01;
 
-                            // Cek PKP
-                            if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-                                return;
+                                var placeholderTarifPajak = "Tarif Pajak 1 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                            }else{
+                                var tarif_pajak_badan = 1;
+
+                                var placeholderTarifPajak = "Tarif Pajak 0 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                            }
+                        }
+
+                        var pajak_yang_harus_disetorkan_badan = tarif_pajak_badan * field_peredaran_bruto.maskMoney('unmasked')[0];
+                        field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_badan).maskMoney('mask');
+                    }else if(date.isBetween(startDate, endDate)){
+                        // Untuk PT saja
+                        if(field_jenis_badan_usaha.val() == "pt"){
+                            // jika peredaaran bruto <= 4,8 M
+                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) <= 4800000000 ){
+                                var tarif_pajak_badan = 0.005;
+
+                                var placeholderTarifPajak = "Tarif Pajak 0,5 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                            }else{
+                                var tarif_pajak_badan = 1;
+
+                                var placeholderTarifPajak = "Tarif Pajak 0 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                             }
 
-                            // Hitung PKP
-                            var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
+                            var pajak_yang_harus_disetorkan_badan = tarif_pajak_badan * field_peredaran_bruto.maskMoney('unmasked')[0];
+                            field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_badan).maskMoney('mask');
+                        }else{
+                            // Selain pt
+                            // jika peredaaran bruto <= 4,8 M
+                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) <= 4800000000 ){
+                                var tarif_pajak_badan = 0.005;
 
-                            // Tampilkan PKP di field_pkp
-                            field_pkp.val(pkp).maskMoney('mask');
+                                var placeholderTarifPajak = "Tarif Pajak 0,5 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                            }else{
+                                var tarif_pajak_badan = 1;
 
-                            // Hitung pajak yang harus disetorkan
-                            // Pajak = pkp x tarif pajak
-                            var pajak = pkp * tarif_pajak_badan;
-
-                            // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                            field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
+                                var placeholderTarifPajak = "Tarif Pajak (0 %)";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                            }
+                            var pajak_yang_harus_disetorkan_badan = tarif_pajak_badan * field_peredaran_bruto.maskMoney('unmasked')[0];
+                            field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_badan).maskMoney('mask');
                         }
-                        // Jika tahun > 3 tahun
-                        else{
-                            // Cek peredaran bruto
-                            // Jika Peredaran bruto >= 4,8 milyar (4.800.000.000)
-                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) >= 4800000000){
-                                // console.log(typeof(parseInt(field_peredaran_bruto.val())));
-                                // console.log('lebih dari 3 th, bruto >= 4,8 milyar, tarif pajak 22%');
 
-                                // set tarif pajak = 22%
+                        
+                    }else if(date.year() == "2021"){
+                        alert("2021");
+                        if(field_jenis_badan_usaha.val() == "pt"){
+                            // jika peredaaran bruto > 50 M
+                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) > 50000000000 ){
                                 var tarif_pajak_badan = 0.22;
 
-                                // Tampilkan tarif pajak di field_tarif_pajak
-                                field_tarif_pajak.val(tarif_pajak_badan);
+                                var placeholderTarifPajak = "Tarif Pajak 22 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
 
-                                // Cek PKP
-                                if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-                                    return;
-                                }
+                                var pajak_yang_harus_disetorkan_badan = tarif_pajak_badan * field_pkp.maskMoney('unmasked')[0];
+                                field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_badan).maskMoney('mask');
+                            }else if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) >= 4800000000 && parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) <= 50000000000){
+                                // rumus di slide
+                                var pkp = parseInt(field_pkp.maskMoney('unmasked')[0]);
+                                var peredaran_bruto = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]);
+                                var pkp_fasilitas = (4800000000/peredaran_bruto)*pkp;
+                                var pkp_non_fasilitas = pkp - pkp_fasilitas;
+                                var pajak_terutang_fasilitas = 0.22 * 0.50 * pkp_fasilitas;
+                                var pajak_terutang_non_fasilitas = 0.22 * pkp_non_fasilitas;
+                                var total_pajak_yang_disetorkan = pajak_terutang_fasilitas + pajak_terutang_non_fasilitas;
 
-                                // Hitung PKP
-                                var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
+                                console.log("pajak khusus 2021");
+                                console.log(typeof(total_pajak_yang_disetorkan));
+                                console.log("pkp " + pkp);
+                                console.log("bruto " + peredaran_bruto);
+                                console.log("pkp fasilitas " + pkp_fasilitas);
+                                console.log("pkp non fasilitas" + pkp_non_fasilitas);
+                                console.log("pajak terutang fasilitas " + pajak_terutang_fasilitas);
+                                console.log("pajak terutang non fasilitas " + pajak_terutang_non_fasilitas);
+                                console.log("pajak yg disetorkan " + total_pajak_yang_disetorkan);
 
-                                // Tampilkan PKP di field_pkp
-                                field_pkp.val(pkp).maskMoney('mask');
+                                var placeholderTarifPajak = "Tarif Pajak Khusus (Tahun 2021)";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
 
-                                // Hitung pajak yang harus disetorkan
-                                // Pajak =  pkp x tarif pajak
-                                var pajak = pkp * tarif_pajak_badan;
-
-                                // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                                field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
-                            }
-                            // Jika peredaran bruto < 4,8 milyar (4.800.000.000)
-                            else{
-                                // console.log('lebih dari 3 th, bruto < 4,8 milyar, tarif pajak 11%');
-
-                                // Set tarif pajak = 11%
+                                field_pajak_yang_disetorkan.val(total_pajak_yang_disetorkan.toString()).maskMoney('mask');
+                            }else{
+                                // p bruto < 4,8 M
                                 var tarif_pajak_badan = 0.11;
 
-                                // Tampilkan tarif pajak di field_tarif_pajak
-                                field_tarif_pajak.val(tarif_pajak_badan);
+                                var placeholderTarifPajak = "Tarif Pajak 11 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
 
-                                // Cek PKP
-                                if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-                                    return;
-                                }
+                                var pajak_yang_harus_disetorkan_badan = tarif_pajak_badan * field_pkp.maskMoney('unmasked')[0];
+                                field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_badan).maskMoney('mask');
+                            }
+                        }else{
+                            // Selain pt
+                            // jika peredaaran bruto <= 4,8 M
+                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) <= 4800000000 ){
+                                var tarif_pajak_badan = 0.005;
 
-                                // Hitung PKP
-                                var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
+                                var placeholderTarifPajak = "Tarif Pajak 0,5 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                            }else{
+                                var tarif_pajak_badan = 1;
 
-                                // Tampilkan PKP di field_pkp
-                                field_pkp.val(pkp).maskMoney('mask');
+                                var placeholderTarifPajak = "Tarif Pajak 0 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+                            }
+                            var pajak_yang_harus_disetorkan_badan = tarif_pajak_badan * field_peredaran_bruto.maskMoney('unmasked')[0];
+                            field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_badan).maskMoney('mask');
+                            
+                        }
+                    }else if(date >= moment("2022-01-01", "YYYY-MM-DD")){
+                        if(field_jenis_badan_usaha.val() == "pt" || field_jenis_badan_usaha.val() == "cv" || field_jenis_badan_usaha.val() == "firma" || field_jenis_badan_usaha.val() == "koperasi" || field_jenis_badan_usaha.val() == "lainnya"){
+                            // jika peredaaran bruto > 50 M
+                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) > 50000000000 ){
+                                var tarif_pajak_badan = 0.20;
 
-                                // Hitung pajak yang harus disetorkan
-                                // Pajak =  pkp x tarif pajak
-                                var pajak = pkp * tarif_pajak_badan;
+                                var placeholderTarifPajak = "Tarif Pajak 20 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
 
-                                // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                                field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
+                                var pajak_yang_harus_disetorkan_badan = tarif_pajak_badan * field_pkp.maskMoney('unmasked')[0];
+                                field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_badan).maskMoney('mask');
+                            }else if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) >= 4800000000 && parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) <= 50000000000){
+                                // rumus di slide
+                                var pkp = parseInt(field_pkp.maskMoney('unmasked')[0]);
+                                var peredaran_bruto = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]);
+                                var pkp_fasilitas = (4800000000/peredaran_bruto)*pkp;
+                                var pkp_non_fasilitas = pkp - pkp_fasilitas;
+                                var pajak_terutang_fasilitas = 0.20 * 0.50 * pkp_fasilitas;
+                                var pajak_terutang_non_fasilitas = 0.20 * pkp_non_fasilitas;
+                                var total_pajak_yang_disetorkan = pajak_terutang_fasilitas + pajak_terutang_non_fasilitas;
 
+                                console.log("pajak khusus 2022");
+                                console.log(typeof(total_pajak_yang_disetorkan));
+                                console.log("pkp " + pkp);
+                                console.log("bruto " + peredaran_bruto);
+                                console.log("pkp fasilitas " + pkp_fasilitas);
+                                console.log("pkp non fasilitas" + pkp_non_fasilitas);
+                                console.log("pajak terutang fasilitas " + pajak_terutang_fasilitas);
+                                console.log("pajak terutang non fasilitas " + pajak_terutang_non_fasilitas);
+                                console.log("pajak yg disetorkan " + total_pajak_yang_disetorkan);
+
+                                var placeholderTarifPajak = "Tarif Pajak Khusus (Tahun 2022)";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+
+                                field_pajak_yang_disetorkan.val(total_pajak_yang_disetorkan.toString()).maskMoney('mask');
+                            }else{
+                                // p bruto < 4,8 M
+                                var tarif_pajak_badan = 0.10;
+
+                                var placeholderTarifPajak = "Tarif Pajak 10 %";
+                                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
+
+                                var pajak_yang_harus_disetorkan_badan = tarif_pajak_badan * field_pkp.maskMoney('unmasked')[0];
+                                field_pajak_yang_disetorkan.val(pajak_yang_harus_disetorkan_badan).maskMoney('mask');
                             }
                         }
                     }
-                    // Jika jenis badan selain PT => brarti CV, Koperasi, Firma, dan Lainnya
-                    else{
-                        // Cek tahun
-                        var tahun_pembuatan_npwp = parseInt(field_tahun_pembuatan_npwp.val());
+                }
+            });
 
-                        // Jika tahun pembuatan <= 4 tahun
-                        if( (getCurrentYear() - tahun_pembuatan_npwp) <= 4){
-                            // console.log('jenis pajak lainnya, <= 4 th, tarif pajak 0,5%');
+            // fungsi ini untuk menampilkan field peredaran bruto berdasarkan tahunnya
+            // munculkan field peredatan bruto saja pada pajak badan :
+            // tahun <= 2018
+            field_tahun_pembuatan_npwp.on('focusout', function(){
+                let date = moment(field_tahun_pembuatan_npwp.val(), "YYYY-MM-DD");
+                let val_jenis_pajak = field_jenis_pajak.val();
+                let val_jenis_badan_usaha = field_jenis_badan_usaha.val();
+                alert(val_jenis_pajak);
+                alert(val_jenis_badan_usaha);
+                alert(date.year());
+                alert(typeof(date.year()));
+                if(val_jenis_pajak == "badan"){
+                    if(date.year() <= 2020){
+                        alert("2018");
 
-                            // Set tarif pajak = 0,5%
-                            var tarif_pajak_badan = 0.005;
-
-                            // Tampilkan tarif pajak di field_tarif_pajak
-                            field_tarif_pajak.val(tarif_pajak_badan);
-
-                            // Cek PKP
-                            if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-                                return;
-                            }
-
-                            // Hitung PKP
-                            var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
-                            // Tampilkan PKP di field_pkp
-                            field_pkp.val(pkp).maskMoney('mask');
-
-                            // Hitung pajak yang harus disetorkan
-                            // Pajak = pkp x tarif pajak
-                            var pajak = pkp * tarif_pajak_badan;
-
-                            // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                            field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
+                        field_peredaran_bruto.hide();
+                        field_pkp.hide();
+                        field_peredaran_bruto.show().maskMoney({
+                            'allowNegative': false,
+                            'allowZero': true,
+                            'precision': 2,
+                            'thousands': '.',
+                            'decimal': ',',
+                            'prefix': 'Rp ' 
+                        });
+                    }else if(date.year() == 2021){
+                        alert("2021");
+                        if(val_jenis_badan_usaha == "pt"){
+                            field_peredaran_bruto.hide();
+                            field_pkp.hide();
+                            field_peredaran_bruto.show().maskMoney({
+                                'allowNegative': false,
+                                'allowZero': true,
+                                'precision': 2,
+                                'thousands': '.',
+                                'decimal': ',',
+                                'prefix': 'Rp ' 
+                            });
+                            field_pkp.show().maskMoney({
+                                'allowNegative': false,
+                                'allowZero': true,
+                                'precision': 2,
+                                'thousands': '.',
+                                'decimal': ',',
+                                'prefix': 'Rp ' 
+                            });
+                        }else{
+                            field_peredaran_bruto.hide();
+                            field_pkp.hide();
+                            field_peredaran_bruto.show().maskMoney({
+                                'allowNegative': false,
+                                'allowZero': true,
+                                'precision': 2,
+                                'thousands': '.',
+                                'decimal': ',',
+                                'prefix': 'Rp ' 
+                            });
                         }
-                        // Jika tahun > 4 tahun
-                        else{
-                            // Cek peredaran bruto
-                            // Jika Peredaran bruto >= 4,8 milyar (4.800.000.000)
-                            if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) >= 4800000000){
-                                // console.log('jenis pajak lainnya, > 4 th, bruto >= 4,8 milyar, tarif pajak 22%');
+                    }else if(date.year() >= 2022){
+                        alert(">= 2022");
 
-                                // set tarif pajak = 22%
-                                var tarif_pajak_badan = 0.22;
-
-                                // Tampilkan tarif pajak di field_tarif_pajak
-                                field_tarif_pajak.val(tarif_pajak_badan);
-
-                                // Cek PKP
-                                if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-                                    return;
-                                }
-
-                                // Hitung PKP
-                                var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
-                                // Tampilkan PKP di field_pkp
-                                field_pkp.val(pkp).maskMoney('mask');
-
-                                // Hitung pajak yang harus disetorkan
-                                // Pajak =  pkp x tarif pajak
-                                var pajak = pkp * tarif_pajak_badan;
-
-                                // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                                field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
-                            }
-                            // Jika peredaran bruto < 4,8 milyar (4.800.000.000)
-                            else{
-                                // console.log('jenis pajak lainnya, > 4 th, bruto < 4,8 milyar, tarif pajak 11%');
-
-                                // Set tarif pajak = 11%
-                                var tarif_pajak_badan = 0.11;
-
-                                // Tampilkan tarif pajak di field_tarif_pajak
-                                field_tarif_pajak.val(tarif_pajak_badan);   
-
-                                // Cek PKP
-                                if(checkPKP(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]), parseInt(field_total_biaya.maskMoney('unmasked')[0])) == false){
-                                    return;
-                                }
-
-                                // Hitung PKP
-                                var pkp = parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) - parseInt(field_total_biaya.maskMoney('unmasked')[0]);
-
-                                // Tampilkan PKP di field_pkp
-                                field_pkp.val(pkp).maskMoney('mask');
-
-                                // Hitung pajak yang harus disetorkan
-                                // Pajak =  pkp x tarif pajak
-                                var pajak = pkp * tarif_pajak_badan;
-
-                                // Tampilkan value pajak ke field_pajak_yang_disetorkan
-                                field_pajak_yang_disetorkan.val(pajak).maskMoney('mask');
-
-                            }
-                        }
+                        field_peredaran_bruto.hide();
+                        field_pkp.hide();
+                        field_peredaran_bruto.show().maskMoney({
+                            'allowNegative': false,
+                            'allowZero': true,
+                            'precision': 2,
+                            'thousands': '.',
+                            'decimal': ',',
+                            'prefix': 'Rp ' 
+                        });
+                        field_pkp.show().maskMoney({
+                            'allowNegative': false,
+                            'allowZero': true,
+                            'precision': 2,
+                            'thousands': '.',
+                            'decimal': ',',
+                            'prefix': 'Rp ' 
+                        });
                     }
-
                 }
             });
 
@@ -955,12 +819,13 @@
             // Fungsi reset field pajak
             function reset(){
                 console.log('reset');
+                var placeholderTarifPajak = "Tarif Pajak";
+                field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                 field_dasar_pengenaan_pajak.val('');
                 field_jenis_badan_usaha.prop('selectedIndex', 0);
                 field_tahun_pembuatan_npwp.val('');
                 field_tarif_pajak.val('');
                 field_peredaran_bruto.val('');
-                field_total_biaya.val('');
                 field_pkp.val('');
                 field_pajak_yang_disetorkan.val('');
             }
@@ -968,6 +833,7 @@
             // Fungsi menampilkan field Pajak PRIBADI
             function show_field_pajak_pribadi(){
                 field_tahun_pembuatan_npwp.show();
+                label_tahun_pembuatan_npwp.show();
                 field_tarif_pajak.show();
                 field_dasar_pengenaan_pajak.show().maskMoney({
                     'allowNegative': false,
@@ -990,32 +856,10 @@
             // Fungsi menampilkan field Pajak BADAN
             function show_field_pajak_badan(){
                 form_input_jenis_badan_usaha.show();
+                label_tahun_pembuatan_npwp.show();
                 field_tahun_pembuatan_npwp.show();
                 field_tarif_pajak.show();
-                field_peredaran_bruto.show().maskMoney({
-                    'allowNegative': false,
-                    'allowZero': true,
-                    'precision': 2,
-                    'thousands': '.',
-                    'decimal': ',',
-                    'prefix': 'Rp ' 
-                });
-                field_total_biaya.show().maskMoney({
-                    'allowNegative': false,
-                    'allowZero': true,
-                    'precision': 2,
-                    'thousands': '.',
-                    'decimal': ',',
-                    'prefix': 'Rp ' 
-                });
-                field_pkp.show().maskMoney({
-                    'allowNegative': false,
-                    'allowZero': true,
-                    'precision': 2,
-                    'thousands': '.',
-                    'decimal': ',',
-                    'prefix': 'Rp ' 
-                });
+                
                 field_pajak_yang_disetorkan.show().maskMoney({
                     'allowNegative': false,
                     'allowZero': true,
@@ -1031,9 +875,9 @@
                 field_dasar_pengenaan_pajak.hide();
                 form_input_jenis_badan_usaha.hide();
                 field_tahun_pembuatan_npwp.hide();
+                label_tahun_pembuatan_npwp.hide();
                 field_tarif_pajak.hide();
                 field_peredaran_bruto.hide();
-                field_total_biaya.hide();
                 field_pkp.hide();
                 field_pajak_yang_disetorkan.hide();
             }   
@@ -1057,23 +901,6 @@
                     }
                 }
             }
-
-            // 2. Untuk inputan tahun, user max input 4 karakter (ex : 2021, 202121 => tidak bisa)
-            function limitTextTahun(field, maxChar){
-                var ref = $(field);
-                var val = ref.val();
-
-                if(val.length >= maxChar){
-                    ref.val(function(){
-                        return val.substr(0, maxChar);
-                    });
-                }
-            }
- 
-            // 3. Ketika user input tahun pembuatan NPWP
-            $('input#tahun_pembuatan_npwp').on('keyup', function(){
-                limitTextTahun(this, 4);
-            });
 
         });
     </script>
