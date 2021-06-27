@@ -546,6 +546,8 @@
                             field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                         }else{
                             // jika selain itu tidak kena pajak
+                            alert("Dasar pengenaan pajak tidak boleh lebih dari 4,8 Milyar !");
+                            return false;
                             var tarif_pajak_orang_pribadi = 1;
                             var placeholderTarifPajak = "Tarif Pajak 0 %";
                             field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
@@ -557,6 +559,8 @@
                             var placeholderTarifPajak = "Tarif Pajak 0,5 %";
                             field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                         }else{
+                            alert("Dasar pengenaan pajak tidak boleh lebih dari 4,8 Milyar !");
+                            return false;
                             // jika selain itu tidak kena pajak
                             var tarif_pajak_orang_pribadi = 1;
                             var placeholderTarifPajak = "Tarif Pajak 0 %";
@@ -600,6 +604,8 @@
                                 var placeholderTarifPajak = "Tarif Pajak 1 %";
                                 field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                             }else{
+                                alert("Peredaran bruto tidak boleh lebih dari 4,8 Milyar !");
+                                return false;
                                 var tarif_pajak_badan = 1;
 
                                 var placeholderTarifPajak = "Tarif Pajak 0 %";
@@ -619,6 +625,8 @@
                                 var placeholderTarifPajak = "Tarif Pajak 0,5 %";
                                 field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                             }else{
+                                alert("Peredaran bruto tidak boleh lebih dari 4,8 Milyar !");
+                                return false;
                                 var tarif_pajak_badan = 1;
 
                                 var placeholderTarifPajak = "Tarif Pajak 0 %";
@@ -636,6 +644,8 @@
                                 var placeholderTarifPajak = "Tarif Pajak 0,5 %";
                                 field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                             }else{
+                                alert("Peredaran bruto tidak boleh lebih dari 4,8 Milyar !");
+                                return false;
                                 var tarif_pajak_badan = 1;
 
                                 var placeholderTarifPajak = "Tarif Pajak (0 %)";
@@ -701,6 +711,8 @@
                                 var placeholderTarifPajak = "Tarif Pajak 0,5 %";
                                 field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                             }else{
+                                alert("Peredaran bruto tidak boleh lebih dari 4,8 Milyar !");
+                                return false;
                                 var tarif_pajak_badan = 1;
 
                                 var placeholderTarifPajak = "Tarif Pajak 0 %";
