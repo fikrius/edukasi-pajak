@@ -37,7 +37,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img data-src="{{ asset('/img/logo/loder.jpg') }}" class="lazyload" alt="">
+                    <img data-src="{{ asset('/img/logo/loder.gif') }}" class="lazyload" alt="">
                 </div>
             </div>
         </div>
