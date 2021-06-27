@@ -647,7 +647,7 @@
 
                         
                     }else if(date.year() == "2021"){
-                        alert("2021");
+                        // alert("2021");
                         if(field_jenis_badan_usaha.val() == "pt"){
                             // jika peredaaran bruto > 50 M
                             if(parseInt(field_peredaran_bruto.maskMoney('unmasked')[0]) > 50000000000 ){
