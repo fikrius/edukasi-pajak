@@ -488,7 +488,7 @@
                         if(parseInt(field_dasar_pengenaan_pajak.maskMoney('unmasked')[0]) <= 4800000000){
                             var tarif_pajak_orang_pribadi = 0.01;
 
-                            var placeholderTarifPajak = "Tarif Pajak 1 %)";
+                            var placeholderTarifPajak = "Tarif Pajak 1 %";
                             field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                         }else{
                             // jika selain itu tidak kena pajak
@@ -500,7 +500,7 @@
                         if(parseInt(field_dasar_pengenaan_pajak.maskMoney('unmasked')[0]) <= 4800000000){
                             var tarif_pajak_orang_pribadi = 0.005;
 
-                            var placeholderTarifPajak = "Tarif Pajak 0,5 %)";
+                            var placeholderTarifPajak = "Tarif Pajak 0,5 %";
                             field_tarif_pajak.attr("placeholder", placeholderTarifPajak);
                         }else{
                             // jika selain itu tidak kena pajak
@@ -713,14 +713,12 @@
                 let date = moment(field_tahun_pembuatan_npwp.val(), "YYYY-MM-DD");
                 let val_jenis_pajak = field_jenis_pajak.val();
                 let val_jenis_badan_usaha = field_jenis_badan_usaha.val();
-                alert(val_jenis_pajak);
-                alert(val_jenis_badan_usaha);
-                alert(date.year());
-                alert(typeof(date.year()));
+                // alert(val_jenis_pajak);
+                // alert(val_jenis_badan_usaha);
+                // alert(date.year());
+                // alert(typeof(date.year()));
                 if(val_jenis_pajak == "badan"){
                     if(date.year() <= 2020){
-                        alert("2018");
-
                         field_peredaran_bruto.hide();
                         field_pkp.hide();
                         field_peredaran_bruto.show().maskMoney({
@@ -732,7 +730,6 @@
                             'prefix': 'Rp ' 
                         });
                     }else if(date.year() == 2021){
-                        alert("2021");
                         if(val_jenis_badan_usaha == "pt"){
                             field_peredaran_bruto.hide();
                             field_pkp.hide();
@@ -765,8 +762,6 @@
                             });
                         }
                     }else if(date.year() >= 2022){
-                        alert(">= 2022");
-
                         field_peredaran_bruto.hide();
                         field_pkp.hide();
                         field_peredaran_bruto.show().maskMoney({
