@@ -30,7 +30,14 @@
                     <!-- Section Tittle -->
                     <div class="section-tittle text-center mb-80">
                         {{-- <span>Our Services</span> --}}
-                        <div class="input-form" id="cek_keyboard" style="width: 50%;">
+                        <div class="row">    
+                            <div class="col-lg-12 col-md-12">
+                                <div class="input-form">
+                                    <input id="cek_keyboard" style="width: 50%;">
+                                </div>
+                            </div>
+                        </div>
+                        
                         <h2>Apa itu Nomor Pokok Wajib Pajak (NPWP) ?</h2>
                     </div>
                 </div>
