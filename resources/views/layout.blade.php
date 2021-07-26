@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="{{ asset('/css/slick.css') }} ">
     <link rel="stylesheet" href="{{ asset('/css/nice-select.css') }} ">
     <link rel="stylesheet" href="{{ asset('/css/style.css') }} ">
-    
+    <link rel="stylesheet" href="{{ asset('/css/jkeyboard.css') }}">
 
     @livewireStyles
 </head>
@@ -292,6 +292,8 @@
 
     <!-- MaskMoney Jquery Plugin -->
     <script defer src="{{ asset('/jquery-maskmoney/src/jquery.maskMoney.js') }}"></script>
+
+    <script src="{{ asset('/js/jkeyboard.js') }}"></script>
 
 
     {{-- Kalkulator Pajak --}}

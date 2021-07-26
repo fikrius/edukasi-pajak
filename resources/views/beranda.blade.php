@@ -37,6 +37,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="div_keyboard"></div>
                         
                         <h2>Apa itu Nomor Pokok Wajib Pajak (NPWP) ?</h2>
                     </div>
@@ -488,22 +489,33 @@
         $(document).ready(function(){
 
             // let keyboard = $("#cek_keyboard").trigger("focus");
-            let keyboard2 = $("#cek_keyboard").trigger("click");
-            if(keyboard){
-                alert("keyboard");
-            }else{
-                alert("keyboard failed");
-            }
+            // let keyboard2 = $("#cek_keyboard").trigger("click");
+            // if(keyboard){
+            //     alert("keyboard");
+            // }else{
+            //     alert("keyboard failed");
+            // }
 
-            if(keyboard2){
-                alert("keyboard2");
-            }else{
-                alert("keyboard2 failed");
-            }
+            // if(keyboard2){
+            //     alert("keyboard2");
+            // }else{
+            //     alert("keyboard2 failed");
+            // }
 
-            setTimeout(function(){
-                $(document).find("#cek_keyboard").focus();
-            },5000);
+            // setTimeout(function(){
+            //     $(document).find("#cek_keyboard").focus();
+            // },5000);
+
+            $('#div_keyboard').jkeyboard({
+                layout: "english",
+                input: $('#cek_keyboard')
+            });
+
+            $('#div_keyboard').jkeyboard({
+                customLayouts: {
+                    selectable: []
+                }
+            });
 
             // Inisialisasi variabel field kalkulator
             let field_jenis_pajak = $('#jenis_pajak');
