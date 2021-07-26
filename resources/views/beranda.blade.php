@@ -506,17 +506,65 @@
             //     $(document).find("#cek_keyboard").focus();
             // },5000);
 
-            $('#div_keyboard').jkeyboard({
-                layout: "english",
-                input: $('#cek_keyboard')
+            $("#cek_keyboard").on('focus', function(){
+                $('#div_keyboard').jkeyboard({
+                    layout: "english",
+                    input: $('#cek_keyboard')
+                });
+
+                $('#div_keyboard').jkeyboard({
+                    customLayouts: {
+                        selectable: [
+                            azeri: [
+                            ['q', 'ü', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'ö', 'ğ'],
+                            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'ı', 'ə'],
+                            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'ç', 'ş', 'backspace'],
+                            ['numeric_switch', 'layout_switch', 'space', 'return']
+                            ],
+                            english: [
+                            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',],
+                            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',],
+                            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'backspace'],
+                            ['numeric_switch', 'layout_switch', 'space', 'return']
+                            ],
+                            german: [
+                            ['q', 'w', 'e', 'r', 't', 'z', 'u', 'i', 'o', 'p','ü','ß'],
+                            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l','ö','ä'],
+                            ['shift', 'y', 'x', 'c', 'v', 'b', 'n', 'm', 'backspace'],
+                            ['numeric_switch', 'layout_switch', 'space', 'return']
+                            ],
+                            russian: [
+                            ['й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х'],
+                            ['ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э'],
+                            ['shift', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', 'backspace'],
+                            ['numeric_switch', 'layout_switch', 'space', 'return']
+                            ],
+                            numeric: [
+                            ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
+                            ['-', '/', ':', ';', '(', ')', '$', '&', '@', '"'],
+                            ['symbol_switch', '.', ',', '?', '!', "'", 'backspace'],
+                            ['character_switch', 'layout_switch', 'space', 'return'],
+                            ],
+                            numbers_only: [
+                            ['1', '2', '3',],
+                            ['4', '5', '6',],
+                            ['7', '8', '9',],
+                            ['0', 'return', 'backspace'],
+                            ],
+                            symbolic: [
+                            ['[', ']', '{', '}', '#', '%', '^', '*', '+', '='],
+                            ['_', '\\', '|', '~', '<', '>'],
+                            ['numeric_switch', '.', ',', '?', '!', "'", 'backspace'],
+                            ['character_switch', 'layout_switch', 'space', 'return'],
+
+                            ]
+                        ]
+                    }
+                });
+
             });
 
-            $('#div_keyboard').jkeyboard({
-                customLayouts: {
-                    selectable: []
-                }
-            });
-
+            
             // Inisialisasi variabel field kalkulator
             let field_jenis_pajak = $('#jenis_pajak');
             let form_input_jenis_badan_usaha = $('#form_input_jenis_badan_usaha');
