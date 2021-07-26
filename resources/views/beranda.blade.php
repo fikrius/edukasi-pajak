@@ -13,7 +13,6 @@
                         <div class="col-xl-9 col-lg-9">
                             <div class="hero__caption">
                                 <h1>Web Pajak <span>Orang Pribadi</span> dan Badan UMKM</h1>
-                                <div class="input-form" id="cek_keyboard" style="width: 50%;">
                             </div>
                         </div>
                     </div>
@@ -31,6 +30,7 @@
                     <!-- Section Tittle -->
                     <div class="section-tittle text-center mb-80">
                         {{-- <span>Our Services</span> --}}
+                        <div class="input-form" id="cek_keyboard" style="width: 50%;">
                         <h2>Apa itu Nomor Pokok Wajib Pajak (NPWP) ?</h2>
                     </div>
                 </div>
