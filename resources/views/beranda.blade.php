@@ -487,7 +487,7 @@
     <script>
         $(document).ready(function(){
 
-            let keyboard = $("#cek_keyboard").trigger("focus");
+            // let keyboard = $("#cek_keyboard").trigger("focus");
             let keyboard2 = $("#cek_keyboard").trigger("click");
             if(keyboard){
                 alert("keyboard");
@@ -500,6 +500,10 @@
             }else{
                 alert("keyboard2 failed");
             }
+
+            setTimeout(function(){
+                $(document).find("#cek_keyboard").focus();
+            },5000);
 
             // Inisialisasi variabel field kalkulator
             let field_jenis_pajak = $('#jenis_pajak');
