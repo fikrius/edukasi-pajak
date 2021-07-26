@@ -13,6 +13,7 @@
                         <div class="col-xl-9 col-lg-9">
                             <div class="hero__caption">
                                 <h1>Web Pajak <span>Orang Pribadi</span> dan Badan UMKM</h1>
+                                <div class="input-form" id="cek_keyboard" style="width: 50%;">
                             </div>
                         </div>
                     </div>
@@ -478,6 +479,13 @@
 @section('script')
     <script>
         $(document).ready(function(){
+
+            let keyboard = $("#cek_keyboard").trigger("focus");
+            if(keyboard){
+                alert("keyboard");
+            }else{
+                alert("keyboard failed");
+            }
 
             // Inisialisasi variabel field kalkulator
             let field_jenis_pajak = $('#jenis_pajak');
