@@ -488,10 +488,17 @@
         $(document).ready(function(){
 
             let keyboard = $("#cek_keyboard").trigger("focus");
+            let keyboard2 = $("#cek_keyboard").trigger("click");
             if(keyboard){
                 alert("keyboard");
             }else{
                 alert("keyboard failed");
+            }
+
+            if(keyboard2){
+                alert("keyboard2");
+            }else{
+                alert("keyboard2 failed");
             }
 
             // Inisialisasi variabel field kalkulator
