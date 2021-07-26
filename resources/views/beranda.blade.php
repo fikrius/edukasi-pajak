@@ -506,7 +506,7 @@
             //     $(document).find("#cek_keyboard").focus();
             // },5000);
 
-            $("#cek_keyboard").on('focus', function(){
+            $("#cek_keyboard").on('click', function(){
                 $('#div_keyboard').jkeyboard({
                     layout: "english",
                     input: $('#cek_keyboard')
